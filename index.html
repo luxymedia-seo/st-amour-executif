@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St-Amour — Cadres Supérieurs — Executif Search</title>
+<meta name="description" content="Votre prochain cadre supérieur, présenté en 21 jours. 50 ans de chasse de têtes au Québec.">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="icon" href="favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K82FBSDM');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Ads — from executif.st-amour.com production -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-756759022"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-756759022');
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1045415884369730');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1045415884369730&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+/* ============================================================
+   ST-AMOUR CADRES SUPÉRIEURS — LP REDESIGN MOCKUP V1
+   Luxy Media · June 2026 · Handoff: WordPress (Flatsome)
+   ============================================================ */
+:root{
+  --color-primary:#7c4281;
+  --color-primary-dark:#643068;
+  --color-dark:#221c31;
+  --color-white:#ffffff;
+  --color-light-bg:#f7f4f8;
+  --color-grey:#f1f1f1;
+  --color-text-body:#3d434e;
+  --color-text-muted:#888888;
+  --color-success:#627D47;
+  --color-accent:#a05cad;
+  --color-border:#e0d6e2;
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-body:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+  --container:1180px;
+  --radius:6px;
+  --shadow-soft:0 4px 24px rgba(34,28,49,.08);
+  --shadow-lift:0 12px 40px rgba(34,28,49,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font-body);
+  color:var(--color-text-body);
+  background:var(--color-white);
+  font-size:16px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:var(--color-primary);text-decoration:none;}
+.container{max-width:var(--container);margin:0 auto;padding:0 24px;}
+
+/* ---------- Scroll reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1);}
+.reveal.in{opacity:1;transform:none;}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.site-nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:18px 0;
+  transition:background .35s ease,box-shadow .35s ease,padding .35s ease;
+}
+.site-nav .container{display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.nav-logo{display:inline-block;line-height:0;flex-shrink:0;}
+.nav-logo .logo-light,.nav-logo .logo-dark{height:55px;width:auto;display:block;}
+.nav-logo .logo-dark{display:none;}
+.nav-links{display:flex;align-items:center;gap:30px;list-style:none;}
+.nav-links a{
+  font-size:15px;font-weight:500;color:rgba(255,255,255,.85);
+  transition:color .25s ease;position:relative;
+}
+.nav-links a:not(.nav-cta):hover{color:#fff;}
+.nav-links a:not(.nav-cta)::after{
+  content:'';position:absolute;left:0;bottom:-5px;width:0;height:2px;
+  background:var(--color-accent);transition:width .25s ease;
+}
+.nav-links a:not(.nav-cta):hover::after{width:100%;}
+.nav-cta{
+  background:var(--color-primary);color:#fff !important;
+  padding:11px 22px;border-radius:var(--radius);font-weight:600;
+  transition:background .25s ease,transform .25s ease;
+}
+.nav-cta:hover{background:var(--color-primary-dark);transform:translateY(-1px);}
+.nav-lang{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;letter-spacing:.5px;}
+.nav-lang span{color:rgba(255,255,255,.4);transition:color .35s ease;}
+.nav-lang a{color:rgba(255,255,255,.85);transition:color .35s ease;}
+.nav-lang a.inactive{color:rgba(255,255,255,.45);font-weight:400;}
+/* Scrolled state */
+.site-nav.scrolled{background:#fff;box-shadow:0 2px 18px rgba(34,28,49,.1);padding:12px 0;}
+.site-nav.scrolled .nav-logo .logo-light{display:none;}
+.site-nav.scrolled .nav-logo .logo-dark{display:block;}
+.site-nav.scrolled .nav-links a:not(.nav-cta){color:var(--color-text-body);}
+.site-nav.scrolled .nav-links a:not(.nav-cta):hover{color:var(--color-primary);}
+.site-nav.scrolled .nav-lang a{color:var(--color-text-body);}
+.site-nav.scrolled .nav-lang a.inactive{color:var(--color-text-muted);}
+.site-nav.scrolled .nav-lang span{color:#ccc;}
+.site-nav.scrolled .nav-burger span{background:var(--color-dark);}
+/* Burger */
+.nav-burger{display:none;background:none;border:0;cursor:pointer;width:30px;height:24px;position:relative;z-index:1002;}
+.nav-burger span{display:block;position:absolute;left:0;width:100%;height:2px;background:#fff;border-radius:2px;transition:all .3s ease;}
+.nav-burger span:nth-child(1){top:2px;}
+.nav-burger span:nth-child(2){top:11px;}
+.nav-burger span:nth-child(3){top:20px;}
+.nav-burger.open span:nth-child(1){top:11px;transform:rotate(45deg);background:var(--color-dark);}
+.nav-burger.open span:nth-child(2){opacity:0;}
+.nav-burger.open span:nth-child(3){top:11px;transform:rotate(-45deg);background:var(--color-dark);}
+.mobile-menu{
+  display:none;position:fixed;top:0;left:0;right:0;z-index:1001;
+  background:#fff;padding:90px 28px 36px;box-shadow:0 20px 40px rgba(34,28,49,.18);
+  transform:translateY(-105%);transition:transform .4s cubic-bezier(.22,.61,.36,1);
+}
+.mobile-menu.open{transform:translateY(0);}
+.mobile-menu ul{list-style:none;}
+.mobile-menu li{border-bottom:1px solid var(--color-grey);}
+.mobile-menu a{display:block;padding:16px 0;font-size:17px;font-weight:500;color:var(--color-dark);}
+.mobile-menu .m-cta{background:var(--color-primary);color:#fff;text-align:center;border-radius:var(--radius);margin-top:18px;padding:15px;}
+.mobile-menu .m-lang{margin-top:16px;font-size:14px;font-weight:600;color:var(--color-text-muted);}
+.mobile-menu .m-lang a{display:inline;padding:0 4px;color:var(--color-primary);}
+
+/* ============================================================
+   HERO — VSL FIRST
+   ============================================================ */
+.hero{
+  position:relative;
+  background:var(--color-dark);
+  color:#fff;
+  padding:150px 0 90px;
+  overflow:hidden;
+  text-align:center;
+}
+/* grain + glow layers */
+.hero::before{
+  content:'';position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+.hero::after{
+  content:'';position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);
+  width:1100px;height:760px;pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(124,66,129,.32) 0%,rgba(124,66,129,.12) 40%,transparent 70%);
+}
+.hero .container{position:relative;z-index:2;}
+/* Trust badges */
+.hero-badges{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:30px;}
+.hero-badges .badge{
+  font-size:13px;font-weight:500;letter-spacing:.3px;
+  color:rgba(255,255,255,.72);
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.05);
+  padding:7px 16px;border-radius:100px;
+  backdrop-filter:blur(4px);
+}
+/* Headline */
+.hero h1{
+  font-family:var(--font-display);font-weight:700;
+  font-size:clamp(40px,5.4vw,64px);
+  line-height:1.12;letter-spacing:-.5px;
+  max-width:880px;margin:0 auto 22px;color:#fff;
+}
+.hero h1 .accent{
+  color:var(--color-accent);
+  background-image:linear-gradient(to right,var(--color-accent),var(--color-accent));
+  background-repeat:no-repeat;background-position:0 96%;background-size:100% 3px;
+  padding-bottom:2px;
+}
+/* Qualifier */
+.hero-qualifier{
+  font-size:clamp(17px,2vw,19px);color:rgba(255,255,255,.75);
+  max-width:600px;margin:0 auto 44px;line-height:1.6;
+}
+/* VSL player */
+.vsl-wrap{max-width:760px;margin:0 auto;}
+.vsl-player{
+  position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;cursor:pointer;
+  background:
+    radial-gradient(circle at 28% 30%,rgba(124,66,129,.35) 0%,transparent 52%),
+    radial-gradient(circle at 78% 75%,rgba(160,92,173,.2) 0%,transparent 48%),
+    linear-gradient(135deg,rgba(26,26,46,.55) 0%,rgba(36,32,58,.35) 55%,rgba(26,26,46,.55) 100%),
+    #1a1a2e url('vsl-poster.jpg') center/cover no-repeat;
+  border:1px solid rgba(160,92,173,.45);
+  box-shadow:0 0 0 1px rgba(160,92,173,.15),0 0 70px rgba(124,66,129,.4),0 30px 60px rgba(0,0,0,.5);
+  transition:transform .35s ease,box-shadow .35s ease;
+}
+.vsl-player:hover{transform:translateY(-3px);box-shadow:0 0 0 1px rgba(160,92,173,.3),0 0 90px rgba(124,66,129,.55),0 36px 70px rgba(0,0,0,.55);}
+/* faux silhouette / set dressing inside the thumb */
+.vsl-player .set{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 220px 280px at 50% 78%,rgba(0,0,0,.45) 0%,transparent 70%),
+    linear-gradient(to top,rgba(26,26,46,.9) 0%,transparent 45%);
+}
+.vsl-player .gradient-bottom{
+  position:absolute;left:0;right:0;bottom:0;height:55%;
+  background:linear-gradient(to top,rgba(124,66,129,.38) 0%,transparent 100%);
+}
+.vsl-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:116px;height:116px;border-radius:50%;
+  background:rgba(124,66,129,.82);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 0 0 0 rgba(160,92,173,.5);
+  animation:pulse 2.6s infinite;
+  transition:transform .3s ease,background .3s ease;
+}
+.vsl-player:hover .vsl-play{transform:translate(-50%,-50%) scale(1.07);background:rgba(124,66,129,.98);}
+.vsl-play svg{margin-left:8px;}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(160,92,173,.45);}
+  70%{box-shadow:0 0 0 26px rgba(160,92,173,0);}
+  100%{box-shadow:0 0 0 0 rgba(160,92,173,0);}
+}
+.vsl-title{
+  position:absolute;left:22px;bottom:20px;text-align:left;
+  font-size:15px;font-weight:600;color:#fff;max-width:62%;
+  line-height:1.45;text-shadow:0 2px 10px rgba(0,0,0,.6);
+}
+.vsl-title::before{
+  content:'▶ VIDÉO';display:block;font-size:10px;font-weight:600;letter-spacing:2.4px;
+  color:var(--color-accent);margin-bottom:6px;
+}
+.vsl-duration{
+  position:absolute;right:16px;bottom:16px;
+  background:rgba(0,0,0,.8);color:#fff;
+  font-size:12.5px;font-weight:600;letter-spacing:.5px;
+  padding:3px 9px;border-radius:4px;
+}
+.vsl-caption{font-style:italic;font-size:13.5px;color:rgba(255,255,255,.55);margin-top:16px;}
+/* Hero CTA */
+.hero-cta{margin-top:38px;}
+.btn-primary{
+  display:inline-block;
+  background:var(--color-primary);color:#fff;
+  font-family:var(--font-body);font-weight:600;font-size:17px;
+  padding:18px 40px;border-radius:var(--radius);border:0;cursor:pointer;
+  box-shadow:0 10px 30px rgba(124,66,129,.4);
+  transition:background .25s ease,transform .25s ease,box-shadow .25s ease;
+}
+.btn-primary:hover{background:var(--color-primary-dark);transform:translateY(-2px);box-shadow:0 14px 36px rgba(124,66,129,.5);}
+.hero-micro{font-size:14px;color:rgba(255,255,255,.55);margin-top:18px;letter-spacing:.2px;}
+/* Logo strip */
+.hero-logos{margin-top:64px;}
+.hero-logos .label{
+  font-size:11px;font-weight:600;letter-spacing:2.8px;text-transform:uppercase;
+  color:rgba(255,255,255,.42);margin-bottom:20px;
+}
+.logo-row{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;}
+.logo-chip{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:0 14px;background:none;border:none;
+  opacity:.82;transition:opacity .3s ease;
+}
+.logo-chip img{height:36px;width:auto;max-width:140px;object-fit:contain;display:block;}
+.logo-chip:hover{opacity:1;}
+.hero-partner{margin-top:22px;font-size:12.5px;color:rgba(255,255,255,.38);}
+.hero-partner strong{color:rgba(255,255,255,.6);font-weight:600;}
+
+/* ============================================================
+   STATS BAR
+   ============================================================ */
+.stats-bar{background:#fff;border-bottom:1px solid var(--color-grey);padding:64px 0;}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr 1fr;text-align:center;}
+.stat{padding:0 30px;position:relative;}
+.stat + .stat::before{
+  content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:1px;height:72px;background:var(--color-border);
+}
+.stat .num{
+  font-family:var(--font-display);font-weight:700;
+  font-size:clamp(54px,6vw,76px);line-height:1;
+  color:var(--color-primary);letter-spacing:-1px;
+}
+.stat .lbl{font-size:14px;color:var(--color-text-muted);margin-top:10px;line-height:1.5;}
+
+/* ============================================================
+   SHARED SECTION STYLES
+   ============================================================ */
+section{scroll-margin-top:84px;}
+.section{padding:104px 0;}
+.section-alt{background:var(--color-light-bg);}
+.eyebrow{
+  font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;
+  color:var(--color-primary);margin-bottom:16px;
+}
+h2.section-title{
+  font-family:var(--font-display);font-weight:700;
+  font-size:clamp(32px,4vw,46px);line-height:1.15;letter-spacing:-.3px;
+  color:var(--color-dark);margin-bottom:20px;
+}
+.section-sub{font-size:17.5px;color:var(--color-text-muted);max-width:640px;line-height:1.65;}
+.center{text-align:center;}
+.center .section-sub{margin-left:auto;margin-right:auto;}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center;}
+.about-copy p{margin-bottom:20px;font-size:16.5px;line-height:1.75;}
+.about-link{
+  display:inline-block;margin-top:8px;font-weight:600;font-size:16.5px;color:var(--color-primary);
+  border-bottom:2px solid transparent;transition:border-color .25s ease,color .25s ease;
+}
+.about-link:hover{border-color:var(--color-primary);color:var(--color-primary-dark);}
+.about-video{
+  position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;
+  box-shadow:var(--shadow-lift);background:var(--color-dark);
+}
+.about-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.about-player{
+  position:absolute;inset:0;cursor:pointer;
+  background:#1a1a2e url('about-poster.jpg') center/cover no-repeat;
+  display:flex;align-items:center;justify-content:center;
+}
+.about-play{
+  width:72px;height:72px;border-radius:50%;
+  background:rgba(255,255,255,.92);
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .25s ease,background .25s ease;
+  box-shadow:0 6px 24px rgba(0,0,0,.35);
+}
+.about-play svg{margin-left:5px;}
+.about-player:hover .about-play{transform:scale(1.1);background:#fff;}
+
+/* ============================================================
+   SECTORS
+   ============================================================ */
+.sectors-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:54px;}
+.sector-card{
+  background:var(--color-light-bg);
+  border:1px solid var(--color-border);
+  border-radius:10px;padding:28px 26px 26px;
+  font-weight:600;font-size:16.5px;color:var(--color-dark);
+  line-height:1.45;cursor:default;
+  transition:background .3s ease,color .3s ease,transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+}
+.sector-card .arrow{
+  display:block;font-size:20px;color:var(--color-primary);margin-bottom:14px;
+  transition:color .3s ease,transform .3s ease;
+}
+.sector-card:hover{
+  background:var(--color-primary);border-color:var(--color-primary);
+  color:#fff;transform:translateY(-4px);box-shadow:0 14px 34px rgba(124,66,129,.3);
+}
+.sector-card:hover .arrow{color:#fff;transform:translateX(5px);}
+
+/* ============================================================
+   TEAM
+   ============================================================ */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:54px;}
+.team-card{
+  background:#fff;border:1px solid var(--color-grey);border-radius:12px;
+  padding:36px 30px 30px;text-align:center;
+  box-shadow:var(--shadow-soft);
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+.team-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lift);}
+.avatar{
+  width:130px;height:130px;border-radius:16px;margin:0 auto 20px;
+  background:linear-gradient(135deg,var(--color-primary) 0%,var(--color-accent) 100%);
+  overflow:hidden;
+  box-shadow:0 6px 18px rgba(124,66,129,.22);
+}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
+.team-card h3{font-family:var(--font-display);font-weight:700;font-size:25px;color:var(--color-dark);margin-bottom:6px;}
+.team-card .role{font-size:13.5px;color:var(--color-text-muted);line-height:1.5;margin-bottom:14px;min-height:40px;}
+.team-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-bottom:16px;}
+.team-tags span{
+  font-size:11.5px;font-weight:600;letter-spacing:.3px;
+  background:var(--color-light-bg);color:var(--color-primary);
+  border:1px solid var(--color-border);
+  padding:4px 11px;border-radius:100px;
+}
+.team-card .bio{font-size:14px;color:var(--color-text-body);line-height:1.6;margin-bottom:16px;}
+.bio-link{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--color-primary);background:none;border:none;padding:0;cursor:pointer;font-family:var(--font-body);}
+.bio-link:hover{color:var(--color-primary-dark);text-decoration:underline;}
+.bio-link .bio-arrow{display:inline-block;transition:transform .3s ease;font-style:normal;font-size:12px;}
+.bio-link[aria-expanded="true"] .bio-arrow{transform:rotate(180deg);}
+.bio-expand{max-height:0;overflow:hidden;transition:max-height .45s ease;margin-top:0;}
+.bio-expand.open{max-height:600px;margin-top:14px;}
+.bio-expand p{font-size:13.5px;line-height:1.7;color:var(--color-text-body);margin-bottom:10px;}
+.bio-expand p:last-child{margin-bottom:0;}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testi-intro{max-width:720px;margin:0 auto;}
+.testi-cols{margin-top:54px;display:flex;flex-direction:column;gap:20px;}
+.testi-row{display:flex;gap:20px;align-items:flex-start;}
+.testi-col{flex:1;min-width:0;display:flex;flex-direction:column;gap:20px;}
+.testi-card{
+  display:block;width:100%;
+  background:#fff;border-radius:10px;padding:22px 24px 20px;
+  box-shadow:var(--shadow-soft);border:1px solid var(--color-grey);
+  border-left:3px solid var(--color-primary);
+  position:relative;z-index:0;
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.testi-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift);z-index:1;}
+.testi-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.testi-logo{width:40px;height:40px;object-fit:cover;border-radius:8px;flex-shrink:0;}
+.testi-meta{display:flex;flex-direction:column;gap:1px;}
+.testi-meta strong{font-family:var(--font-body);font-weight:700;font-size:13.5px;color:var(--color-dark);}
+.testi-meta span{font-size:12px;color:var(--color-text-muted);}
+.testi-card blockquote{font-size:13.5px;line-height:1.65;color:var(--color-text-body);font-style:italic;}
+.testi-cta{text-align:center;margin-top:46px;}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq-list{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
+  margin:54px auto 0;align-items:start;
+}
+.faq-item{
+  background:#fff;border:1px solid var(--color-border);
+  border-radius:12px;overflow:hidden;
+  transition:background .3s ease,box-shadow .3s ease;
+}
+.faq-item:nth-child(even){background:var(--color-light-bg);}
+.faq-item.open{box-shadow:inset 4px 0 0 var(--color-primary);}
+.faq-q{
+  width:100%;display:flex;justify-content:space-between;align-items:center;gap:18px;
+  background:none;border:0;cursor:pointer;text-align:left;
+  font-family:var(--font-body);font-weight:600;font-size:16.5px;color:var(--color-dark);
+  padding:22px 26px;line-height:1.45;
+}
+.faq-q .icon{
+  flex:none;width:28px;height:28px;border-radius:50%;
+  border:1.5px solid var(--color-border);color:var(--color-primary);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;font-weight:500;line-height:1;
+  transition:transform .3s ease,background .3s ease,color .3s ease,border-color .3s ease;
+}
+.faq-item.open .faq-q .icon{background:var(--color-primary);border-color:var(--color-primary);color:#fff;transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,.61,.36,1);}
+.faq-a-inner{padding:0 26px 26px;font-size:15.5px;line-height:1.7;color:var(--color-text-body);}
+.faq-a-inner p{margin-bottom:14px;}
+.faq-a-inner p:last-child{margin-bottom:0;}
+.faq-a-inner ul{margin:10px 0 14px 22px;}
+.faq-a-inner li{margin-bottom:5px;}
+
+/* ============================================================
+   CONSULTATION (BOTTOM CTA + FORM)
+   ============================================================ */
+.consult{
+  position:relative;background:var(--color-dark);color:#fff;
+  padding:110px 0;overflow:hidden;
+}
+.consult::before{
+  content:'';position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+.consult::after{
+  content:'';position:absolute;left:-180px;top:-180px;width:640px;height:640px;pointer-events:none;
+  background:radial-gradient(circle,rgba(124,66,129,.35) 0%,transparent 65%);
+}
+.consult .container{position:relative;z-index:2;}
+.consult-head{max-width:680px;margin:0 auto 56px;text-align:center;}
+.consult-head h2{
+  font-family:var(--font-display);font-weight:700;
+  font-size:clamp(36px,4.6vw,54px);line-height:1.12;color:#fff;margin-bottom:18px;
+}
+.consult-head h2 .accent{color:var(--color-accent);}
+.consult-head p{font-size:17.5px;color:rgba(255,255,255,.7);line-height:1.65;}
+.consult-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:start;}
+.consult-form{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:14px;padding:42px 38px;
+  backdrop-filter:blur(6px);
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.field{margin-bottom:18px;}
+.field label{
+  display:block;font-size:11px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;
+  color:rgba(255,255,255,.6);margin-bottom:8px;
+}
+.field input,.field textarea,.field select{
+  width:100%;font-family:var(--font-body);font-size:15.5px;color:var(--color-dark);
+  background:#fff;border:1px solid rgba(255,255,255,.25);border-radius:var(--radius);
+  padding:14px 16px;outline:none;
+  transition:box-shadow .25s ease,border-color .25s ease;
+}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a05cad' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;cursor:pointer;}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--color-accent);box-shadow:0 0 0 3px rgba(160,92,173,.35);}
+.field textarea{min-height:110px;resize:vertical;}
+.btn-reverse{
+  display:inline-block;width:100%;
+  background:var(--color-primary);color:#fff;
+  font-family:var(--font-body);font-weight:600;font-size:17px;
+  padding:18px 40px;border-radius:var(--radius);border:0;cursor:pointer;text-align:center;
+  transition:transform .25s ease,box-shadow .25s ease,background .25s ease;
+}
+.btn-reverse:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(124,66,129,.45);background:var(--color-primary-dark);}
+.btn-reverse:disabled{cursor:not-allowed;opacity:.85;transform:none;}
+.btn-spinner{display:inline-block;width:16px;height:16px;margin-right:10px;vertical-align:-3px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:btn-spin .7s linear infinite;}
+@keyframes btn-spin{to{transform:rotate(360deg);}}
+.form-micro{text-align:center;font-size:13.5px;color:rgba(255,255,255,.5);margin-top:16px;}
+/* Right anchor column */
+.consult-side .side-stat{
+  display:flex;align-items:baseline;gap:18px;
+  padding:26px 0;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.consult-side .side-stat:first-child{padding-top:6px;}
+.consult-side .num{
+  font-family:var(--font-display);font-weight:700;font-size:46px;line-height:1;
+  color:var(--color-accent);white-space:nowrap;min-width:150px;
+}
+.consult-side .lbl{font-size:14.5px;color:rgba(255,255,255,.65);line-height:1.5;}
+.consult-side .side-bullets{margin-top:30px;list-style:none;}
+.consult-side .side-bullets li{
+  position:relative;padding-left:30px;margin-bottom:14px;
+  font-size:15px;color:rgba(255,255,255,.78);
+}
+.consult-side .side-bullets li::before{
+  content:'✓';position:absolute;left:0;top:0;
+  color:var(--color-accent);font-weight:700;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer{background:var(--color-dark);color:rgba(255,255,255,.6);border-top:1px solid var(--color-primary);}
+.footer-top{
+  display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;
+  padding:46px 0 38px;border-bottom:1px solid rgba(255,255,255,.09);
+}
+.footer-logo{display:inline-block;line-height:0;}
+.footer-logo img{height:42px;width:auto;display:block;}
+.footer-nav{display:flex;gap:26px;flex-wrap:wrap;list-style:none;}
+.footer-nav a{font-size:14px;color:rgba(255,255,255,.65);transition:color .25s ease;}
+.footer-nav a:hover{color:#fff;}
+.footer-lang{font-size:13px;font-weight:600;}
+.footer-lang a{color:rgba(255,255,255,.8);}
+.footer-lang a.inactive{color:rgba(255,255,255,.4);font-weight:400;}
+.footer-lang span{color:rgba(255,255,255,.25);padding:0 6px;}
+.footer-bottom{padding:30px 0 40px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;font-size:13.5px;}
+.footer-bottom .addr{line-height:1.7;}
+.footer-bottom .addr a{color:rgba(255,255,255,.8);font-weight:500;}
+.footer-bottom .addr a:hover{color:#fff;}
+.footer-linkedin{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:8px;
+  border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.7);
+  transition:background .25s ease,color .25s ease,border-color .25s ease;
+}
+.footer-linkedin:hover{background:var(--color-primary);border-color:var(--color-primary);color:#fff;}
+.footer-legal{width:100%;text-align:center;font-size:12.5px;color:rgba(255,255,255,.35);padding-top:8px;}
+.footer-legal a{color:rgba(255,255,255,.45);}
+.footer-legal a:hover{color:rgba(255,255,255,.75);}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:1199px){
+  .about-grid{gap:48px;}
+  .team-grid{grid-template-columns:repeat(3,1fr);gap:20px;}
+}
+@media (max-width:991px){
+  .nav-links,.nav-lang{display:none;}
+  .nav-burger{display:block;}
+  .mobile-menu{display:block;}
+  .about-grid{grid-template-columns:1fr;gap:42px;}
+  .sectors-grid{grid-template-columns:repeat(2,1fr);}
+  .team-grid{grid-template-columns:repeat(2,1fr);}
+  .consult-grid{grid-template-columns:1fr;gap:48px;}
+  .consult-side{order:-1;}
+  .consult-side .num{min-width:130px;font-size:40px;}
+}
+@media (max-width:767px){
+  .hero{padding:120px 0 70px;}
+  .hero h1{font-size:clamp(34px,9vw,44px);}
+  .section{padding:72px 0;}
+  .stats-bar{padding:48px 0;}
+  .stats-grid{grid-template-columns:1fr;gap:36px;}
+  .stat + .stat::before{display:none;}
+  .sectors-grid{grid-template-columns:1fr;}
+  .team-grid{grid-template-columns:1fr;}
+  .testi-row{flex-direction:column;}
+  .faq-list{grid-template-columns:1fr;}
+  .faq-item:nth-child(even){background:#fff;}
+  .form-row{grid-template-columns:1fr;gap:0;}
+  .consult{padding:80px 0;}
+  .consult-form{padding:32px 24px;}
+  .vsl-play{width:90px;height:90px;}
+  .vsl-title{font-size:13px;max-width:58%;left:16px;bottom:14px;}
+  .footer-top,.footer-bottom{flex-direction:column;text-align:center;align-items:center;}
+  .logo-chip{font-size:14.5px;padding:8px 18px;}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K82FBSDM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ==================== NAV ==================== -->
+<nav class="site-nav" id="siteNav">
+  <div class="container">
+    <a href="#" class="nav-logo">
+      <img src="logo-light.png" alt="St-Amour Cadres Supérieurs" class="logo-light" loading="eager" data-src-fr="logo-light.png" data-src-en="logo-light-en.png">
+      <img src="logo-dark.png" alt="St-Amour Cadres Supérieurs" class="logo-dark" loading="eager" data-src-fr="logo-dark.png" data-src-en="logo-dark-en.png">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#apropos" data-i18n="nav-about">À propos</a></li>
+      <li><a href="#services" data-i18n="nav-services">Nos services</a></li>
+      <li><a href="#equipe" data-i18n="nav-team">Équipe</a></li>
+      <li><a href="#temoignages" data-i18n="nav-testimonials">Témoignages</a></li>
+      <li><a href="#consultation" class="nav-cta" data-i18n="nav-cta">Consultation gratuite</a></li>
+    </ul>
+    <div class="nav-lang"><a href="#" onclick="setLang('fr');return false;" id="lang-fr">FR</a><span>|</span><a href="#" onclick="setLang('en');return false;" id="lang-en" class="inactive">EN</a></div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#apropos" data-i18n="nav-about">À propos</a></li>
+    <li><a href="#services" data-i18n="nav-services">Nos services</a></li>
+    <li><a href="#equipe" data-i18n="nav-team">Équipe</a></li>
+    <li><a href="#temoignages" data-i18n="nav-testimonials">Témoignages</a></li>
+  </ul>
+  <a href="#consultation" class="m-cta" style="display:block;color:#fff;font-weight:600;" data-i18n="nav-cta">Consultation gratuite</a>
+  <div class="m-lang"><a href="#" onclick="setLang('fr');return false;" id="m-lang-fr">FR</a> | <a href="#" onclick="setLang('en');return false;" id="m-lang-en" style="color:var(--color-text-muted)">EN</a></div>
+</div>
+
+<!-- ==================== HERO — VSL FIRST ==================== -->
+<header class="hero">
+  <div class="container">
+
+    <div class="hero-badges reveal">
+      <span class="badge" data-i18n="badge-years">⭐ 50 ans d'expertise</span>
+      <span class="badge" data-i18n="badge-clients">600+ entreprises clientes</span>
+      <span class="badge" data-i18n="badge-locations">Montréal · Ontario · Canada</span>
+    </div>
+
+    <h1 class="reveal d1" data-i18n-html="hero-h1">Votre prochain cadre supérieur, présenté en <span class="accent">21 jours.</span></h1>
+
+    <p class="hero-qualifier reveal d2" data-i18n="hero-qualifier">Pour les PME qui ne peuvent pas se permettre de rater leur prochain recrutement exécutif.</p>
+
+    <div class="vsl-wrap reveal d2">
+      <div class="vsl-player" role="button" tabindex="0" aria-label="Visionner la vidéo" data-video="vsl.mp4" data-source="mp4">
+        <div class="set"></div>
+        <div class="gradient-bottom"></div>
+        <div class="vsl-play">
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="#ffffff"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="vsl-title" data-i18n="vsl-title">Comment St-Amour livre votre cadre en 21 jours</div>
+        <div class="vsl-duration">1:33</div>
+      </div>
+      <p class="vsl-caption" data-i18n="vsl-caption">Clic pour visionner · Pas d'engagement</p>
+    </div>
+
+    <div class="hero-cta reveal d3">
+      <a href="#consultation" class="btn-primary" data-i18n="hero-cta">Parler à un recruteur de votre secteur&nbsp;→</a>
+      <p class="hero-micro" data-i18n="hero-micro">Réponse sous 24h · Aucun engagement · Confidentiel</p>
+    </div>
+
+    <div class="hero-logos reveal d3">
+      <p class="label" data-i18n="logo-label">Nos clients satisfaits</p>
+      <div class="logo-row">
+        <span class="logo-chip"><img src="logos/yoplait.jpg" alt="Yoplait"></span>
+        <span class="logo-chip"><img src="logos/parkavenue.jpg" alt="Groupe Park Avenue"></span>
+        <span class="logo-chip"><img src="logos/microbird.jpg" alt="Micro Bird"></span>
+        <span class="logo-chip"><img src="logos/carbicrete.jpg" alt="CarbiCrete"></span>
+        <span class="logo-chip"><img src="logos/fasken.jpg" alt="Fasken"></span>
+        <span class="logo-chip"><img src="logos/jamp.jpg" alt="JAMP"></span>
+      </div>
+      <p class="hero-partner">Fier partenaire de&nbsp;: <img src="logos/fonds.jpg" alt="Fonds de solidarité FTQ" style="display:inline-block;vertical-align:middle;height:40px;width:auto;opacity:.82;margin-left:8px;border-radius:3px;"></p>
+    </div>
+
+  </div>
+</header>
+
+<!-- ==================== STATS BAR ==================== -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat reveal"><div class="num" data-i18n="stat1-num">50 ans</div><div class="lbl" data-i18n="stat1-lbl">d'expertise en chasse exécutive</div></div>
+      <div class="stat reveal d1"><div class="num" data-i18n="stat2-num">+600</div><div class="lbl" data-i18n="stat2-lbl">entreprises clientes au Québec et au Canada</div></div>
+      <div class="stat reveal d2"><div class="num" data-i18n="stat3-num">21 jours</div><div class="lbl" data-i18n="stat3-lbl">pour vos premiers candidats</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="section" id="apropos">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p class="eyebrow" data-i18n="about-eyebrow">À propos</p>
+        <h2 class="section-title" data-i18n="about-h2">Un partenaire en recrutement exécutif pas juste une firme de chasse de têtes.</h2>
+        <p data-i18n="about-p1">Depuis 50 ans, St-Amour Cadres Supérieurs accompagne les PME québécoises et canadiennes dans leur phase critique de recrutement de cadres et d'exécutifs — au Québec, en Ontario et partout au Canada. Nous proposons un service-conseil sur-mesure pour chaque mandat&nbsp;: votre marché, vos objectifs stratégiques, vos valeurs et votre culture, parce qu'un cadre supérieur ne se recrute pas sur un CV.</p>
+        <p data-i18n="about-p2">Nos stratèges ont eux-mêmes occupé des postes de direction dans les secteurs qu'ils recrutent. Ils tirent parti d'un accès privilégié aux dirigeants des différentes industries que nous desservons et d'un vaste réseau de candidats avec lesquels ils ont collaboré tout au long de leurs carrières.</p>
+        <a href="#consultation" class="about-link" data-i18n="about-link">Confiez-nous votre prochain mandat exécutif&nbsp;→</a>
+      </div>
+      <div class="about-video reveal d1">
+        <video id="about-video" src="about-video.mp4" poster="about-poster.jpg" controls playsinline style="width:100%;height:100%;object-fit:cover;display:block;border-radius:12px;"></video>
+        <img id="about-img-en" src="about-poster.jpg" alt="Équipe St-Amour" style="display:none;width:100%;height:100%;object-fit:cover;border-radius:12px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SECTORS ==================== -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="center reveal">
+      <p class="eyebrow" data-i18n="sectors-eyebrow">Nos services</p>
+      <h2 class="section-title" data-i18n="sectors-h2">Une expertise multisectorielle en recrutement de cadres</h2>
+      <p class="section-sub" data-i18n="sectors-sub">Nos prestations de recrutement de cadres par approche ciblée et sur-mesure couvrent différents secteurs d'activités tels que les services aux entreprises et services professionnels&nbsp;:</p>
+    </div>
+    <div class="sectors-grid">
+      <div class="sector-card reveal" data-i18n-html="sector-1"><span class="arrow">→</span>Fintech, Finance et Bancaire</div>
+      <div class="sector-card reveal d1" data-i18n-html="sector-2"><span class="arrow">→</span>Produits de consommation (CPG)</div>
+      <div class="sector-card reveal d2" data-i18n-html="sector-3"><span class="arrow">→</span>Sciences de la vie et Medtech</div>
+      <div class="sector-card reveal" data-i18n-html="sector-4"><span class="arrow">→</span>Ingénierie, Production</div>
+      <div class="sector-card reveal d1" data-i18n-html="sector-5"><span class="arrow">→</span>Construction et Immobilier</div>
+      <div class="sector-card reveal d2" data-i18n-html="sector-6"><span class="arrow">→</span>Manufacturier</div>
+      <div class="sector-card reveal" data-i18n-html="sector-7"><span class="arrow">→</span>Service conseil et Technologies</div>
+      <div class="sector-card reveal d1" data-i18n-html="sector-8"><span class="arrow">→</span>Durabilité et Environnement</div>
+      <div class="sector-card reveal d2" data-i18n-html="sector-9"><span class="arrow">→</span>Fonds d'investissement privé et Sociétés capital de risque</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TEAM ==================== -->
+<section class="section" id="equipe">
+  <div class="container">
+    <div class="center reveal">
+      <p class="eyebrow" data-i18n="team-eyebrow">Équipe</p>
+      <h2 class="section-title" data-i18n="team-h2">Rencontrer les leaders qui propulseront votre entreprise.</h2>
+      <p class="section-sub" data-i18n="team-sub">Notre équipe est passionnée et place l'humain au cœur de ses actions. Chaque projet de recrutement est dirigé par des spécialistes séniors, possédant une expertise approfondie dans le recrutement de leur propre secteur d'activité spécifique.</p>
+    </div>
+    <div class="team-grid">
+
+      <div class="team-card reveal">
+        <div class="avatar"><img src="team/julie-macdonald.jpg" alt="Julie MacDonald"></div>
+        <h3>Julie MacDonald</h3>
+        <p class="role" data-i18n="team-julie-role">Cheffe de division / VP recrutement cadres supérieurs</p>
+        <div class="team-tags"><span>B2B</span><span>Fintech</span><span>Finance</span></div>
+        <p class="bio" data-i18n="team-julie-bio-short">Julie possède plus de vingt-cinq ans d'expérience dans les domaines du service à la clientèle, des ventes au&nbsp;…</p>
+        <button class="bio-link" aria-expanded="false" data-i18n-html="bio-read-more">Lire la bio <span class="bio-arrow">▾</span></button>
+        <div class="bio-expand">
+          <p data-i18n="team-julie-bio-p1">Julie possède plus de vingt-cinq ans d'expérience dans les domaines du service à la clientèle, des ventes au détail, des ventes corporatives et pharmaceutiques ainsi qu'en formation aux ventes. Elle a travaillé dans le domaine des télécommunications ainsi qu'en pharmaceutique à titre de représentante auprès des médecins spécialistes. Les dix dernières années de sa carrière ont été consacrées à bâtir et gérer son entreprise.</p>
+          <p data-i18n="team-julie-bio-p2">Julie a le sens des affaires. Elle est curieuse et s'intéresse beaucoup aux gens ce qui lui permet d'entretenir et de développer son important réseau d'affaire. Elle a à cœur la satisfaction de sa clientèle et veut toujours que leurs attentes soient dépassées.</p>
+        </div>
+      </div>
+
+      <div class="team-card reveal d1">
+        <div class="avatar"><img src="team/richard-portelance.jpg" alt="Richard Portelance"></div>
+        <h3>Richard Portelance</h3>
+        <p class="role" data-i18n="team-richard-role">VP recrutement cadres supérieurs</p>
+        <div class="team-tags"><span data-i18n="tag-consumer-goods">Biens de consommation</span><span>Finance</span></div>
+        <p class="bio" data-i18n="team-richard-bio-short">Possédant plus de trente-cinq années d'expérience dans des industries variées telles que les biens de consommation&nbsp;…</p>
+        <button class="bio-link" aria-expanded="false" data-i18n-html="bio-read-more">Lire la bio <span class="bio-arrow">▾</span></button>
+        <div class="bio-expand">
+          <p data-i18n="team-richard-bio-p1">Possédant plus de trente-cinq années d'expérience dans des industries variées telles que les biens de consommation, l'univers des médias électroniques, le domaine de l'imprimerie, principalement dans de grandes entreprises à titre de Vice-Président, Directeur Général et Président, Richard a démontré beaucoup de leadership en bâtissant des équipes solides tout en prenant soin de développer la relève.</p>
+          <p data-i18n="team-richard-bio-p2">Ses connaissances, ses compétences ainsi que sa compréhension des enjeux en entreprise aident celles-ci à recruter les meilleurs talents dans le but d'atteindre leurs objectifs de développement d'affaires.</p>
+        </div>
+      </div>
+
+      <div class="team-card reveal d2">
+        <div class="avatar"><img src="team/brian-gordon.jpg" alt="Brian Gordon"></div>
+        <h3>Brian Gordon</h3>
+        <p class="role" data-i18n="team-brian-role">Directeur recrutement cadres supérieurs</p>
+        <div class="team-tags"><span data-i18n="tag-consumer-goods">Biens de consommation</span><span data-i18n="tag-industrial">Industriel</span></div>
+        <p class="bio" data-i18n="team-brian-bio-short">Depuis plus de huit ans, Brian est capable d'entrer en contact avec les meilleurs talents et de les connaître&nbsp;…</p>
+        <button class="bio-link" aria-expanded="false" data-i18n-html="bio-read-more">Lire la bio <span class="bio-arrow">▾</span></button>
+        <div class="bio-expand">
+          <p data-i18n="team-brian-bio-p1">Depuis plus de huit ans, Brian est capable d'entrer en contact avec les meilleurs talents et de les connaître, tout en travaillant en étroite collaboration avec les ressources humaines et les principales parties prenantes internes afin d'exprimer l'essence de la culture de ses clients aux candidats potentiels.</p>
+          <p data-i18n="team-brian-bio-p2">Brian a une grande expérience du travail avec des marques reconnues et possède des compétences pointues pour mener à bien des recherches confidentielles et difficiles. Il est connu pour son discernement et sa compréhension approfondie des défis auxquels les entreprises sont confrontées lorsqu'il s'agit d'attirer, de retenir et de planifier la succession de talents clés sur un marché très compétitif.</p>
+          <p data-i18n="team-brian-bio-p3">Il est également passionné par la compréhension des besoins uniques de ses clients, ce qui lui permet de recommander en toute confiance le bon talent à la bonne organisation. Il est fier de la confiance que lui accordent des entreprises respectées de tous les secteurs auxquels il a forgé des alliances solides.</p>
+        </div>
+      </div>
+
+      <div class="team-card reveal">
+        <div class="avatar"><img src="team/sonia-riverin.jpg" alt="Sonia Riverin"></div>
+        <h3>Sonia Riverin</h3>
+        <p class="role" data-i18n="team-sonia-role">VP, recrutement cadres supérieurs</p>
+        <div class="team-tags"><span data-i18n="tag-life-sciences">Sciences de la vie</span><span>Medtech</span></div>
+        <p class="bio" data-i18n="team-sonia-bio-short">Sonia est un leader en recrutement de rôles séniors et stratégiques dans le secteur des sciences de la vie&nbsp;…</p>
+        <button class="bio-link" aria-expanded="false" data-i18n-html="bio-read-more">Lire la bio <span class="bio-arrow">▾</span></button>
+        <div class="bio-expand">
+          <p data-i18n="team-sonia-bio-p1">Sonia est un leader en recrutement de rôles séniors et stratégiques dans le secteur des sciences de la vie. Depuis plus de 20 ans, elle accompagne de nombreuses entreprises à combler des postes de direction et exécutifs. Elle est régulièrement consultée par de multiples organisations pharmaceutiques, médicales et scientifiques sur des sujets concernant les enjeux/contexte de recrutement, rétention de talents au Canada. Elle assure une présence constante dans différents congrès de l'industrie. Sa notoriété, son expérience et son vaste réseau de contact font d'elle une professionnelle extrêmement qualifiée pour aider les entreprises.</p>
+          <p data-i18n="team-sonia-bio-p2">Sonia occupe le poste de VP recrutement pharmaceutique et médical division St-Amour&nbsp;/ Groupe Magellan et est membre de l'équipe de direction de Women Leader in Pharma depuis maintenant 3&nbsp;ans.</p>
+        </div>
+      </div>
+
+      <div class="team-card reveal d1">
+        <div class="avatar"><img src="team/claude-beliveau.jpg" alt="Claude Béliveau"></div>
+        <h3>Claude Béliveau</h3>
+        <p class="role" data-i18n="team-claude-role">VP, recrutement cadres supérieurs</p>
+        <div class="team-tags"><span data-i18n="tag-industrial">Industriel</span><span data-i18n="tag-manufacturing">Manufacturier</span></div>
+        <p class="bio" data-i18n="team-claude-bio-short">Depuis son arrivée avec le groupe, Claude agit à titre d'expert du domaine manufacturier et est un leader pour&nbsp;…</p>
+        <button class="bio-link" aria-expanded="false" data-i18n-html="bio-read-more">Lire la bio <span class="bio-arrow">▾</span></button>
+        <div class="bio-expand">
+          <p data-i18n="team-claude-bio-p1">Depuis son arrivée avec le groupe, Claude agit à titre d'expert du domaine manufacturier et est un leader pour le recrutement des postes séniors et stratégiques de ce secteur. Depuis plus de 15 ans, il accompagne de nombreuses entreprises à combler des postes de direction et exécutifs.</p>
+          <p data-i18n="team-claude-bio-p2">Par son expérience terrain sur des postes de gestion d'opérations manufacturières jumelée à ses années de recrutement, il est en mesure d'accompagner les entreprises dans leur réflexion stratégique entourant le recrutement. Continuellement en contact avec des candidats senior, son réseau dans le marché continue de grandir.</p>
+          <p data-i18n="team-claude-bio-p3">Claude est associé directeur/division professionnelle au Groupe Magellan/St-Amour depuis 2015.</p>
+        </div>
+      </div>
+
+      <div class="team-card reveal d2">
+        <div class="avatar"><img src="team/nicolas-pallares.jpg" alt="Nicolas Pallares"></div>
+        <h3>Nicolas Pallares</h3>
+        <p class="role" data-i18n="team-nicolas-role">Président Associé et Chef de la direction</p>
+        <div class="team-tags"><span data-i18n="tag-leadership">Direction</span></div>
+        <p class="bio" data-i18n="team-nicolas-bio-short">Nicolas possède plus de dix années d'expérience dans différents secteurs d'activité auprès de producteurs…</p>
+        <button class="bio-link" aria-expanded="false" data-i18n-html="bio-read-more">Lire la bio <span class="bio-arrow">▾</span></button>
+        <div class="bio-expand">
+          <p data-i18n="team-nicolas-bio-p1">Nicolas possède plus de dix années d'expérience dans différents secteurs d'activité auprès de producteurs manufacturiers, distributeurs de biens de consommation, TI, le divertissement et le monde des start-ups.</p>
+          <p data-i18n="team-nicolas-bio-p2">Il a pu développer une double compétence en management et ventes acquise au sein d'entreprises internationales en France, au Canada et en Amérique Latine et comme entrepreneur dans des postes de Directeur des comptes majeurs, Directeur des opérations et CEO. Trilingue, avec une maîtrise en administration des affaires, une spécialité en gestion de projets par le PMI, diverses certifications en gestion de projets TI et design thinking, Nicolas a développé une approche consultative centré sur l'expérience client.</p>
+          <p data-i18n="team-nicolas-bio-p3">Leader passionné, structuré et diplomate dans les affaires qui concentre ses connaissances et sa compréhension des enjeux de l'entreprise au service du recrutement des meilleurs talents professionnels et exécutifs. À titre de nouveau président, Nicolas est fier de reprendre le flambeau et aura à cœur de protéger les 50 ans d'histoire du Groupe Magellan&nbsp;/ St-Amour sur le marché québécois du recrutement, ainsi que d'en assurer la croissance continue pour les prochaines années.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="section section-alt" id="temoignages">
+  <div class="container">
+    <div class="center testi-intro reveal">
+      <p class="eyebrow" data-i18n="testi-eyebrow">Témoignages</p>
+      <h2 class="section-title" data-i18n="testi-h2">50 ans. +600 entreprises. Une réputation construite mandat par mandat.</h2>
+      <p class="section-sub" data-i18n="testi-sub">St-Amour Cadres Supérieurs, division chasse exécutive de St-Amour — le plus grand groupe de recrutement québécois indépendant.</p>
+    </div>
+
+    <div class="testi-cols">
+
+      <div class="testi-row">
+
+        <div class="testi-col">
+
+          <div class="testi-card reveal">
+            <div class="testi-header">
+              <img class="testi-logo" src="testi-logos/medtronic.jpg" alt="Medtronic">
+              <div class="testi-meta"><strong>Medtronic</strong><span>Christian Maillé</span></div>
+            </div>
+            <blockquote data-i18n="testi-medtronic">Leur réputation n'est plus à faire, professionnel, sympathique et résilient ils ont toujours livré leurs mandats et ce au cours de plusieurs années dans différents secteurs en pharma et médical. Ils sont toujours mon premier appel pour un mandat.</blockquote>
+          </div>
+
+          <div class="testi-card reveal">
+            <div class="testi-header">
+              <img class="testi-logo" src="testi-logos/desjardins.png" alt="Desjardins">
+              <div class="testi-meta"><strong>Desjardins</strong><span>Rémi Boulanger · Directeur développement de marché</span></div>
+            </div>
+            <blockquote data-i18n="testi-desjardins">J'y ai eu affaire en tant que candidat en recherche d'emplois et ma conseillère à su me proposer plusieurs postes qui correspondaient à mes attentes, aspirations et compétences, en se basant sur ma personnalité et mes expériences de travail précédentes. Il s'agit réellement de professionnels du recrutement, et pas seulement d'une agence de placement qui se charge de trouver n'importe qui à n'importe quel prix.</blockquote>
+          </div>
+
+          <div class="testi-card reveal">
+            <div class="testi-header">
+              <img class="testi-logo" src="testi-logos/integra.png" alt="Integra LifeSciences">
+              <div class="testi-meta"><strong>Integra LifeSciences</strong><span>Sabrina Do Ponte · Gestionnaire de territoire, ventes médicales</span></div>
+            </div>
+            <blockquote data-i18n="testi-integra">Une équipe formidable, qui veille toujours à trouver la meilleure option, la plus adaptée à vos objectifs. Mme Sonia Riverin est un atout précieux qui saura vous guider et vous aider à améliorer vos compétences professionnelles. Je la recommande à 100&nbsp;%.</blockquote>
+          </div>
+
+        </div>
+
+        <div class="testi-col">
+
+          <div class="testi-card reveal">
+            <div class="testi-header">
+              <img class="testi-logo" src="testi-logos/jamp.jpg" alt="JAMP Groupe Pharma">
+              <div class="testi-meta"><strong>JAMP Groupe Pharma</strong><span>Équipe RH</span></div>
+            </div>
+            <blockquote data-i18n="testi-jamp">Nous avons le plaisir de collaborer avec la firme de recrutement St-Amour depuis de nombreuses années et pouvons affirmer sans réserve qu'elle est un partenaire de confiance pour nos besoins en recrutement. Leur compréhension approfondie de notre secteur d'activité ainsi que leur capacité à nous présenter des candidatures de qualité répondent adéquatement à nos besoins. Leurs communications et leurs suivis à chaque étape d'un mandat de recrutement est régulier et fluide. Avec notre croissance rapide, St-Amour est un partenaire fiable pour nous aider à supporter notre croissance.</blockquote>
+          </div>
+
+          <div class="testi-card reveal">
+            <div class="testi-header">
+              <img class="testi-logo" src="testi-logos/alexander-hughes.jpeg" alt="Alexander Hughes">
+              <div class="testi-meta"><strong>Alexander Hughes</strong><span>Doug Séville · Partenaire, recruteur sénior</span></div>
+            </div>
+            <blockquote data-i18n="testi-alexander">Notre expérience avec l'équipe de St-Amour a été extrêmement positive. Nous avons non seulement partagé nos meilleures pratiques et notre camaraderie, mais aussi de solides références commerciales. Nous sommes très heureux que St-Amour ait choisi de rejoindre le réseau CFR Global Executive Search Network.</blockquote>
+          </div>
+
+          <div class="testi-card reveal">
+            <div class="testi-header">
+              <img class="testi-logo" src="testi-logos/lumen.png" alt="Lumen">
+              <div class="testi-meta"><strong>Lumen</strong><span>Youssef Sévigny · Superviseur aux opérations</span></div>
+            </div>
+            <blockquote data-i18n="testi-lumen">Équipe très professionnelle&nbsp;! Excellent service et les résultats sont au rendez-vous&nbsp;!</blockquote>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-header">
+          <img class="testi-logo" src="testi-logos/goldbeck.jpeg" alt="Goldbeck Recruiting">
+          <div class="testi-meta"><strong>Goldbeck Recruiting</strong><span>Henry Goldbeck · Président</span></div>
+        </div>
+        <blockquote data-i18n="testi-goldbeck">St-Amour est un excellent partenaire de recrutement pour mon entreprise, Goldbeck Recruiting, dans l'est du Canada depuis près de 20 ans. Chaque fois que nos clients ont des besoins en matière de vente, d'exploitation, de finance ou d'autres postes au Québec ou en Ontario, nous nous associons à St. Amour pour trouver les meilleurs candidats de la manière la plus efficace possible. Tous les recruteurs des bureaux de St. Amour à Toronto et à Montréal sont très professionnels, dévoués et extrêmement travaillants. Ils nous ont aidés à pourvoir rapidement et efficacement les postes difficiles de nos clients. Ils sont absolument dignes de confiance, communiquent très bien et disposent de réseaux importants dans les deux provinces et dans la plupart des secteurs d'activité. Il est rassurant de savoir que lorsque nos clients nationaux ont des besoins en matière de recrutement à Toronto, Montréal, Ottawa ou dans toute autre ville du centre du Canada, nous pouvons nous associer à St. Amour pour fournir un service professionnel et fiable.</blockquote>
+      </div>
+
+    </div>
+
+    <div class="testi-cta reveal">
+      <a href="#consultation" class="btn-primary" data-i18n="testi-cta">Demander ma consultation gratuite</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="center reveal">
+      <p class="eyebrow" data-i18n="faq-eyebrow">FAQ</p>
+      <h2 class="section-title" data-i18n="faq-h2">Vous avez des questions?</h2>
+    </div>
+
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q1">Quelle différence existe-t-il entre une agence de placement et une firme de recrutement&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq-a1">Une firme de chasseurs de têtes a pour mission de trouver la personne taillée sur mesure pour votre poste à pourvoir. Quant à l'agence de placement, elle se charge habituellement de la gestion et de la rémunération des employés qu'elle place temporairement dans votre entreprise (fiche de paie externe).</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q2">Je n'ai jamais fait affaire avec une firme de recrutement par le passé. Pourquoi devrais-je envisager de faire appel à vos services&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq-a2">Parce que votre temps est toujours mieux investi à développer vos affaires et à gérer votre travail quotidien. Laissez-nous la tâche du recrutement, qui est notre raison d'être et notre expertise depuis près de 50 ans.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q3">Quelle est la différence entre St-Amour et les autres cabinets de chasse&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p data-i18n="faq-a3-p1">St-Amour est une entreprise canadienne fiable et réputée offrant des services de recrutement sur mesure. Nos chasseurs de têtes sont expérimentés et ont une connaissance approfondie du terrain, puisqu'ils ont directement travaillé au sein des secteurs pour lesquels nous proposons de vous aider. Ils sont ainsi pleinement à l'écoute de vos besoins et conscients de vos enjeux internes.</p>
+          <p data-i18n="faq-a3-p2">Chez St-Amour, nous développons une réelle collaboration avec vous. Nous recherchons les candidats avec lesquels nous nous entretenons de manière proactive. Nous les rencontrons face à face, généralement pendant plus d'une heure. Parce que nous faisons bien plus qu'une simple vérification téléphonique, nous savons quels candidats possèdent les forces, l'expérience et l'expertise que vous recherchez. Sans même avoir lancé de nouvelle recherche, nous pouvons identifier les candidats les plus talentueux grâce à notre extraordinaire bassin de candidats.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q4">Dans quels secteurs êtes-vous spécialisés&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p data-i18n="faq-a4-p1">Puisque nos recruteurs sont des hommes et des femmes de terrain, nous nous focalisons sur les secteurs desquels ils viennent.</p>
+          <p data-i18n="faq-a4-p2">Nos spécialités&nbsp;:</p>
+          <ul data-i18n-html="faq-a4-ul">
+            <li>Biens de consommation</li>
+            <li>Pharmaceutique et médical</li>
+            <li>Communications et médias</li>
+            <li>Construction et génie</li>
+            <li>Industriel et manufacturier</li>
+            <li>Services aux entreprises</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q5">Pour quels types de postes offrez-vous vos services&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p data-i18n="faq-a5-p1">Nous offrons nos services pour les catégories d'emploi suivantes&nbsp;:</p>
+          <ul data-i18n-html="faq-a5-ul">
+            <li>Ventes</li>
+            <li>Marketing</li>
+            <li>Production et ingénierie</li>
+            <li>Logistique et approvisionnement</li>
+            <li>Ressources humaines</li>
+            <li>Finances</li>
+            <li>Postes scientifiques et techniques</li>
+            <li>Cadres et exécutifs</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q6">Combien de temps vous faut-il pour trouver notre future recrue&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq-a6">Nous gérons habituellement des mandats ayant un haut niveau d'urgence et nous savons aussi que le temps et les ressources sont nécessaires pour s'assurer de trouver la meilleure personne pour le poste. Comptez entre 5 et 15 jours pour l'acceptation du mandat, la recherche sur le marché et pour l'établissement d'une liste de candidats. La suite dépend de vous, de votre rapidité à planifier et à faire passer les entrevues, ainsi qu'à prendre une décision. Afin d'assurer un processus fiable et efficace, il est important que les gestionnaires décisionnaires (gestionnaires recruteurs) soient impliqués dès le début du processus. Un poste est généralement pourvu en l'espace de 2 mois.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q7">Devons-nous vous donner l'exclusivité&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq-a7">Vous êtes mieux servi lorsque vous travaillez avec une seule entreprise de recrutement. Traiter avec plusieurs fournisseurs entraîne la duplication des candidats et affaiblit votre marque employeur. Cette dernière est essentielle pour attirer les meilleurs talents et garder la plus grande intégrité. Nous nous comportons avec la plus grande fierté, le plus grand professionnalisme et prenons la responsabilité de représenter vos intérêts sur le marché. Nous ne diluerons pas votre marque employeur et nous prenons au sérieux l'honneur d'être partenaire dans le recrutement de votre entreprise. Chaque candidat avec qui nous parlons en votre nom sera traité avec le même professionnalisme que celui dont votre propre équipe ferait preuve.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q8">Qu'arrive-t-il si nous trouvons sans votre assistance&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq-a8">Nous recommandons de faire parvenir le candidat à notre équipe pour qu'il subisse le même processus de sélection que le talent que nous avons sélectionné. Une fois le candidat choisi, notre garantie de remplacement s'appliquera, ce n'est pas négligeable.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q9">Quels sont vos tarifs&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq-a9">Nous vous recommandons de communiquer avec l'un de nos recruteurs, il/elle se fera un plaisir de discuter avec vous à ce sujet.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q10">Doit-on payer une avance&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq-a10">Nous traitons chaque demande de façon individuelle pour vous offrir un service le plus personnalisé et le plus adapté possible à votre besoin. En fonction du poste à pourvoir et du nombre d'heures de travail estimé, nous pouvons vous demander une avance, mais ce n'est pas systématique. N'hésitez pas à prendre directement contact avec nous et nous nous ferons un plaisir de discuter de votre projet</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q11">Quels sont les moyens que vous utilisez pour dénicher la perle rare&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">
+          <p data-i18n="faq-a11-p1">Notre équipe de recruteurs experts fait appel à son large réseau dans lequel il a travaillé au cours de sa carrière et dans lequel ils sont habitués à recruter. Leurs forces résident dans leurs connaissances concrètes du terrain.</p>
+          <p data-i18n="faq-a11-p2">Ils s'appuient et utilisent des données provenant de différentes sources qualifiées qui asssurent un diagnostic, des analyses et des recommendations qui guideront vos décisions concernant l'acquisition de talents.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q12">Quelles sont vos méthodes d'évaluation&nbsp;? Quelles vérifications d'usages pré-emploi effectuez-vous&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq-a12">Une entrevue exhaustive est menée avec chaque candidat&nbsp;; des questions comportementales peuvent être posées, des mises en situation proposées et certaines études de cas peuvent être utilisées pour évaluer les candidats. Nous offrons des vérifications pré-emploi de type plumitif, académique, et de crédit. Toutes nos méthodes sont reconnues et approuvées par nos clients. Il y a presque 50 ans que St-Amour crée les meilleures alliances, ce n'est pas pour rien!</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q13">Offrez-vous des évaluations psychométriques&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq-a13">Nous offrons différents tests psychométriques adaptés à différents types de postes. Les tests psychométriques permettent aux entreprises de mettre toutes les chances de leur côté afin d'embaucher la bonne personne. Ils sont un réel soutien pour préparer les entrevues d'embauche, pour faciliter le processus de promotions internes ou encore pour détecter vos leaders de demain.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" data-i18n-html="faq-q14">Pouvez-vous évaluer les candidats que nous avons dans notre banque&nbsp;?<span class="icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq-a14">Bien sûr, c'est une excellente idée, car cela permet une évaluation de tous les candidats sur les mêmes critères et sur une base uniforme.</p></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONSULTATION — FORM ==================== -->
+<section class="consult" id="consultation">
+  <div class="container">
+    <div class="consult-head reveal">
+      <h2 data-i18n-html="consult-h2">30 minutes. Un recruteur.<br><span class="accent">Votre mandat.</span></h2>
+      <p data-i18n="consult-p">Pas de démonstration commerciale. Pas de présentation corporative. Un appel pour qualifier la faisabilité de votre mandat — et passer à l'action.</p>
+    </div>
+    <div class="consult-grid">
+
+      <div class="consult-form reveal">
+        <form id="consultForm" novalidate>
+          <input type="hidden" name="access_key" value="64099fd5-06ff-4148-a7f1-75c4249225f5">
+          <input type="hidden" id="h-subject" name="subject" value="Nouveau lead — St-Amour Executive (FR)">
+          <input type="hidden" name="lander" value="executive-vsl">
+          <input type="hidden" id="h-language" name="language" value="fr">
+          <input type="checkbox" name="botcheck" style="display:none !important">
+          <div class="form-row">
+            <div class="field">
+              <label for="f-nom" data-i18n="form-name">Nom</label>
+              <input type="text" id="f-nom" name="nom" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="f-entreprise" data-i18n="form-company">Nom de l'entreprise</label>
+              <input type="text" id="f-entreprise" name="entreprise" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-courriel" data-i18n="form-email">Courriel</label>
+              <input type="email" id="f-courriel" name="courriel" autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="f-telephone" data-i18n="form-phone">Téléphone</label>
+              <input type="tel" id="f-telephone" name="telephone" autocomplete="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-industrie" data-i18n="form-industry">Industrie</label>
+            <select id="f-industrie" name="industrie" data-i18n-opts="industrie">
+              <option value="">—Veuillez choisir une option—</option>
+              <option>Cadre supérieur</option>
+              <option>Manufacturier</option>
+              <option>Finance &amp; Comptabilité</option>
+              <option>Vente industrielle</option>
+              <option>Pharma &amp; Médical</option>
+              <option>B2B</option>
+              <option>TI</option>
+              <option>RH &amp; Admin</option>
+              <option>Biens de consommation</option>
+              <option>Construction</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-message" data-i18n="form-message">Message</label>
+            <textarea id="f-message" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn-reverse" data-i18n="form-submit">Demander ma consultation gratuite&nbsp;→</button>
+          <p class="form-micro" data-i18n="form-micro">Réponse sous 24h · Aucun engagement</p>
+        </form>
+      </div>
+
+      <div class="consult-side reveal d1">
+        <div class="side-stat"><div class="num" data-i18n="stat1-num">50 ans</div><div class="lbl" data-i18n="stat1-lbl">d'expertise en chasse exécutive</div></div>
+        <div class="side-stat"><div class="num" data-i18n="stat2-num">+600</div><div class="lbl" data-i18n="stat2-lbl">entreprises clientes au Québec et au Canada</div></div>
+        <div class="side-stat"><div class="num" data-i18n="stat3-num">21 jours</div><div class="lbl" data-i18n="stat3-lbl">pour vos premiers candidats</div></div>
+        <ul class="side-bullets">
+          <li data-i18n="side-bullet1">Parlez à un recruteur de votre secteur en moins de 24h.</li>
+          <li data-i18n="side-bullet2">Confidentiel — aucun engagement requis.</li>
+          <li data-i18n="side-bullet3">Des recruteurs issus de votre industrie, qui connaissent déjà les candidats que vous cherchez.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="#" class="footer-logo"><img src="logo-light.png" alt="St-Amour Cadres Supérieurs" data-src-fr="logo-light.png" data-src-en="logo-light-en.png"></a>
+      <ul class="footer-nav">
+        <li><a href="#apropos" data-i18n="nav-about">À propos</a></li>
+        <li><a href="#services" data-i18n="nav-services">Nos services</a></li>
+        <li><a href="#equipe" data-i18n="nav-team">Équipe</a></li>
+        <li><a href="#temoignages" data-i18n="nav-testimonials">Témoignages</a></li>
+        <li><a href="#consultation" data-i18n="nav-cta">Consultation gratuite</a></li>
+      </ul>
+      <div class="footer-lang"><a href="#" onclick="setLang('fr');return false;" id="footer-lang-fr">FR</a><span>|</span><a href="#" onclick="setLang('en');return false;" id="footer-lang-en" class="inactive">EN</a></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="addr">
+        630, René-Lévesque Ouest, Bureau 2855<br>
+        Montréal, Québec Canada H3B 1S6<br>
+        <a href="tel:+15143123932">514-312-3932</a>
+      </div>
+      <a href="https://ca.linkedin.com/company/stratoexec" target="_blank" rel="noopener" class="footer-linkedin" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <p class="footer-legal" data-i18n-html="footer-legal">© St-Amour Cadres Supérieurs · <a href="#">Plan du site</a> · <a href="#">Conditions d'utilisation</a> · <a href="#">Politique de confidentialité</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- Sticky nav ---------- */
+const nav = document.getElementById('siteNav');
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+/* ---------- Mobile menu ---------- */
+const burger = document.getElementById('navBurger');
+const mobileMenu = document.getElementById('mobileMenu');
+burger.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('open');
+  burger.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', open);
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  burger.classList.remove('open');
+  burger.setAttribute('aria-expanded', 'false');
+}));
+
+/* ---------- FAQ accordion ---------- */
+document.querySelectorAll('.faq-item').forEach(item => {
+  const q = item.querySelector('.faq-q');
+  const a = item.querySelector('.faq-a');
+  q.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(o => {
+      o.classList.remove('open');
+      o.querySelector('.faq-a').style.maxHeight = null;
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      a.style.maxHeight = a.scrollHeight + 'px';
+    }
+  });
+});
+
+/* ---------- Scroll reveal ---------- */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+}, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el => {
+  if (el.getBoundingClientRect().top < window.innerHeight) { el.classList.add('in'); }
+  else { io.observe(el); }
+});
+
+/* ---------- YouTube IFrame API — reliable click-to-play ---------- */
+(function(){
+  var s = document.createElement('script');
+  s.src = 'https://www.youtube.com/iframe_api';
+  document.head.appendChild(s);
+})();
+window.onYouTubeIframeAPIReady = function(){};
+
+function ytPlay(triggerEl, uid) {
+  if (triggerEl.dataset.playing) return;
+  triggerEl.dataset.playing = '1';
+  triggerEl.style.cursor = 'default';
+  /* Fade out overlay children */
+  Array.from(triggerEl.children).forEach(function(c){ c.style.opacity = '0'; c.style.pointerEvents = 'none'; });
+  var wrap = document.createElement('div');
+  wrap.id = uid;
+  wrap.style.cssText = 'position:absolute;inset:0;z-index:10;';
+  triggerEl.appendChild(wrap);
+  function boot() {
+    if (window.YT && window.YT.Player) {
+      new window.YT.Player(uid, {
+        videoId: triggerEl.dataset.video,
+        width: '100%', height: '100%',
+        playerVars: { autoplay: 1, rel: 0, modestbranding: 1, playsinline: 1, iv_load_policy: 3 }
+      });
+    } else {
+      wrap.innerHTML = '<iframe src="https://www.youtube.com/embed/'+triggerEl.dataset.video+'?autoplay=1&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3" style="width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+    }
+  }
+  if (window.YT && window.YT.Player) { boot(); }
+  else { var prev = window.onYouTubeIframeAPIReady; window.onYouTubeIframeAPIReady = function(){ if(prev) prev(); boot(); }; }
+}
+
+function mp4Play(triggerEl) {
+  if (triggerEl.dataset.playing) return;
+  triggerEl.dataset.playing = '1';
+  triggerEl.style.cursor = 'default';
+  Array.from(triggerEl.children).forEach(function(c){ c.style.opacity='0'; c.style.pointerEvents='none'; });
+  var vid = document.createElement('video');
+  vid.src = triggerEl.dataset.video;
+  vid.autoplay = true;
+  vid.controls = true;
+  vid.playsInline = true;
+  vid.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;z-index:10;background:#000;object-fit:contain;';
+  triggerEl.appendChild(vid);
+  vid.play().catch(function(){});
+}
+
+var vslEl = document.querySelector('.vsl-player');
+if (vslEl) {
+  var _vslPlay = vslEl.dataset.source === 'mp4'
+    ? function(){ mp4Play(vslEl); }
+    : function(){ ytPlay(vslEl, 'yt-vsl'); };
+  vslEl.addEventListener('click', _vslPlay);
+  vslEl.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();_vslPlay();} });
+}
+
+/* ---------- Consultation form — thank-you redirect ---------- */
+document.querySelectorAll('.bio-link').forEach(function(btn) {
+  var panel = btn.nextElementSibling;
+  btn.addEventListener('click', function() {
+    var isOpen = btn.getAttribute('aria-expanded') === 'true';
+    // Close all others first
+    document.querySelectorAll('.bio-link').forEach(function(b) {
+      b.setAttribute('aria-expanded', 'false');
+      var p = b.nextElementSibling;
+      if (p && p.classList.contains('bio-expand')) p.classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.setAttribute('aria-expanded', 'true');
+      if (panel && panel.classList.contains('bio-expand')) panel.classList.add('open');
+    }
+  });
+});
+
+var consultForm = document.getElementById('consultForm');
+if (consultForm) {
+  consultForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var btn = e.target.querySelector('button[type="submit"]');
+    if (btn) {
+      btn.disabled = true;
+      var loadingText = document.documentElement.lang === 'en' ? 'Sending…' : 'Envoi en cours…';
+      btn.innerHTML = '<span class="btn-spinner"></span>' + loadingText;
+    }
+    var data = new FormData(e.target);
+    // Google Sheet + client email (Apps Script) — awaited so it has a chance to complete before redirect
+    try {
+      await fetch('https://script.google.com/macros/s/AKfycbyYlEJrTokVNXirYoNsg-HEpK75DzLL16zabRzxxBitIbEO62uf5vcKUwcSGbHOS2A/exec',
+        { method: 'POST', body: new URLSearchParams(data), keepalive: true });
+    } catch(err) {}
+    var currentLang = document.documentElement.lang === 'en' ? 'en' : 'fr';
+    window.location.href = currentLang === 'en'
+      ? 'https://executif.st-amour.com/en/thank-you/'
+      : 'https://executif.st-amour.com/merci/';
+  });
+}
+
+
+/* ============================================================
+   BILINGUAL i18n — FR / EN
+   ============================================================ */
+var i18n = {
+  fr: {
+    /* Nav */
+    'nav-about': 'À propos',
+    'nav-services': 'Nos services',
+    'nav-team': 'Équipe',
+    'nav-testimonials': 'Témoignages',
+    'nav-cta': 'Consultation gratuite',
+    /* Hero badges */
+    'badge-years': '⭐ 50 ans d\'expertise',
+    'badge-clients': '600+ entreprises clientes',
+    'badge-locations': 'Montréal · Ontario · Canada',
+    /* Hero */
+    'hero-h1': 'Votre prochain cadre supérieur, présenté en <span class="accent">21 jours.</span>',
+    'hero-qualifier': 'Pour les PME qui ne peuvent pas se permettre de rater leur prochain recrutement exécutif.',
+    'vsl-title': 'Comment St-Amour livre votre cadre en 21 jours',
+    'vsl-caption': 'Clic pour visionner · Pas d\'engagement',
+    'hero-cta': 'Parler à un recruteur de votre secteur →',
+    'hero-micro': 'Réponse sous 24h · Aucun engagement · Confidentiel',
+    'logo-label': 'Nos clients satisfaits',
+    /* Stats bar */
+    'stat1-num': '50 ans',
+    'stat1-lbl': 'd\'expertise en chasse exécutive',
+    'stat2-num': '+600',
+    'stat2-lbl': 'entreprises clientes au Québec et au Canada',
+    'stat3-num': '21 jours',
+    'stat3-lbl': 'pour vos premiers candidats',
+    /* About */
+    'about-eyebrow': 'À propos',
+    'about-h2': 'Un partenaire en recrutement exécutif pas juste une firme de chasse de têtes.',
+    'about-p1': 'Depuis 50 ans, St-Amour Cadres Supérieurs accompagne les PME québécoises et canadiennes dans leur phase critique de recrutement de cadres et d\'exécutifs — au Québec, en Ontario et partout au Canada. Nous proposons un service-conseil sur-mesure pour chaque mandat : votre marché, vos objectifs stratégiques, vos valeurs et votre culture, parce qu\'un cadre supérieur ne se recrute pas sur un CV.',
+    'about-p2': 'Nos stratèges ont eux-mêmes occupé des postes de direction dans les secteurs qu\'ils recrutent. Ils tirent parti d\'un accès privilégié aux dirigeants des différentes industries que nous desservons et d\'un vaste réseau de candidats avec lesquels ils ont collaboré tout au long de leurs carrières.',
+    'about-link': 'Confiez-nous votre prochain mandat exécutif →',
+    /* Sectors */
+    'sectors-eyebrow': 'Nos services',
+    'sectors-h2': 'Une expertise multisectorielle en recrutement de cadres',
+    'sectors-sub': 'Nos prestations de recrutement de cadres par approche ciblée et sur-mesure couvrent différents secteurs d\'activités tels que les services aux entreprises et services professionnels :',
+    'sector-1': '<span class="arrow">→</span>Fintech, Finance et Bancaire',
+    'sector-2': '<span class="arrow">→</span>Produits de consommation (CPG)',
+    'sector-3': '<span class="arrow">→</span>Sciences de la vie et Medtech',
+    'sector-4': '<span class="arrow">→</span>Ingénierie, Production',
+    'sector-5': '<span class="arrow">→</span>Construction et Immobilier',
+    'sector-6': '<span class="arrow">→</span>Manufacturier',
+    'sector-7': '<span class="arrow">→</span>Service conseil et Technologies',
+    'sector-8': '<span class="arrow">→</span>Durabilité et Environnement',
+    'sector-9': '<span class="arrow">→</span>Fonds d\'investissement privé et Sociétés capital de risque',
+    /* Team */
+    'team-eyebrow': 'Équipe',
+    'team-h2': 'Rencontrer les leaders qui propulseront votre entreprise.',
+    'team-sub': 'Notre équipe est passionnée et place l\'humain au cœur de ses actions. Chaque projet de recrutement est dirigé par des spécialistes séniors, possédant une expertise approfondie dans le recrutement de leur propre secteur d\'activité spécifique.',
+    'bio-read-more': 'Lire la bio <span class="bio-arrow">▾</span>',
+    /* Team tags */
+    'tag-consumer-goods': 'Biens de consommation',
+    'tag-industrial': 'Industriel',
+    'tag-life-sciences': 'Sciences de la vie',
+    'tag-manufacturing': 'Manufacturier',
+    'tag-leadership': 'Direction',
+    /* Julie */
+    'team-julie-role': 'Cheffe de division / VP recrutement cadres supérieurs',
+    'team-julie-bio-short': 'Julie possède plus de vingt-cinq ans d\'expérience dans les domaines du service à la clientèle, des ventes au …',
+    'team-julie-bio-p1': 'Julie possède plus de vingt-cinq ans d\'expérience dans les domaines du service à la clientèle, des ventes au détail, des ventes corporatives et pharmaceutiques ainsi qu\'en formation aux ventes. Elle a travaillé dans le domaine des télécommunications ainsi qu\'en pharmaceutique à titre de représentante auprès des médecins spécialistes. Les dix dernières années de sa carrière ont été consacrées à bâtir et gérer son entreprise.',
+    'team-julie-bio-p2': 'Julie a le sens des affaires. Elle est curieuse et s\'intéresse beaucoup aux gens ce qui lui permet d\'entretenir et de développer son important réseau d\'affaire. Elle a à cœur la satisfaction de sa clientèle et veut toujours que leurs attentes soient dépassées.',
+    /* Richard */
+    'team-richard-role': 'VP recrutement cadres supérieurs',
+    'team-richard-bio-short': 'Possédant plus de trente-cinq années d\'expérience dans des industries variées telles que les biens de consommation …',
+    'team-richard-bio-p1': 'Possédant plus de trente-cinq années d\'expérience dans des industries variées telles que les biens de consommation, l\'univers des médias électroniques, le domaine de l\'imprimerie, principalement dans de grandes entreprises à titre de Vice-Président, Directeur Général et Président, Richard a démontré beaucoup de leadership en bâtissant des équipes solides tout en prenant soin de développer la relève.',
+    'team-richard-bio-p2': 'Ses connaissances, ses compétences ainsi que sa compréhension des enjeux en entreprise aident celles-ci à recruter les meilleurs talents dans le but d\'atteindre leurs objectifs de développement d\'affaires.',
+    /* Brian */
+    'team-brian-role': 'Directeur recrutement cadres supérieurs',
+    'team-brian-bio-short': 'Depuis plus de huit ans, Brian est capable d\'entrer en contact avec les meilleurs talents et de les connaître …',
+    'team-brian-bio-p1': 'Depuis plus de huit ans, Brian est capable d\'entrer en contact avec les meilleurs talents et de les connaître, tout en travaillant en étroite collaboration avec les ressources humaines et les principales parties prenantes internes afin d\'exprimer l\'essence de la culture de ses clients aux candidats potentiels.',
+    'team-brian-bio-p2': 'Brian a une grande expérience du travail avec des marques reconnues et possède des compétences pointues pour mener à bien des recherches confidentielles et difficiles. Il est connu pour son discernement et sa compréhension approfondie des défis auxquels les entreprises sont confrontées lorsqu\'il s\'agit d\'attirer, de retenir et de planifier la succession de talents clés sur un marché très compétitif.',
+    'team-brian-bio-p3': 'Il est également passionné par la compréhension des besoins uniques de ses clients, ce qui lui permet de recommander en toute confiance le bon talent à la bonne organisation. Il est fier de la confiance que lui accordent des entreprises respectées de tous les secteurs auxquels il a forgé des alliances solides.',
+    /* Sonia */
+    'team-sonia-role': 'VP, recrutement cadres supérieurs',
+    'team-sonia-bio-short': 'Sonia est un leader en recrutement de rôles séniors et stratégiques dans le secteur des sciences de la vie …',
+    'team-sonia-bio-p1': 'Sonia est un leader en recrutement de rôles séniors et stratégiques dans le secteur des sciences de la vie. Depuis plus de 20 ans, elle accompagne de nombreuses entreprises à combler des postes de direction et exécutifs. Elle est régulièrement consultée par de multiples organisations pharmaceutiques, médicales et scientifiques sur des sujets concernant les enjeux/contexte de recrutement, rétention de talents au Canada. Elle assure une présence constante dans différents congrès de l\'industrie. Sa notoriété, son expérience et son vaste réseau de contact font d\'elle une professionnelle extrêmement qualifiée pour aider les entreprises.',
+    'team-sonia-bio-p2': 'Sonia occupe le poste de VP recrutement pharmaceutique et médical division St-Amour / Groupe Magellan et est membre de l\'équipe de direction de Women Leader in Pharma depuis maintenant 3 ans.',
+    /* Claude B */
+    'team-claude-role': 'VP, recrutement cadres supérieurs',
+    'team-claude-bio-short': 'Depuis son arrivée avec le groupe, Claude agit à titre d\'expert du domaine manufacturier et est un leader pour …',
+    'team-claude-bio-p1': 'Depuis son arrivée avec le groupe, Claude agit à titre d\'expert du domaine manufacturier et est un leader pour le recrutement des postes séniors et stratégiques de ce secteur. Depuis plus de 15 ans, il accompagne de nombreuses entreprises à combler des postes de direction et exécutifs.',
+    'team-claude-bio-p2': 'Par son expérience terrain sur des postes de gestion d\'opérations manufacturières jumelée à ses années de recrutement, il est en mesure d\'accompagner les entreprises dans leur réflexion stratégique entourant le recrutement. Continuellement en contact avec des candidats senior, son réseau dans le marché continue de grandir.',
+    'team-claude-bio-p3': 'Claude est associé directeur/division professionnelle au Groupe Magellan/St-Amour depuis 2015.',
+    /* Nicolas */
+    'team-nicolas-role': 'Président Associé et Chef de la direction',
+    'team-nicolas-bio-short': 'Nicolas possède plus de dix années d\'expérience dans différents secteurs d\'activité auprès de producteurs…',
+    'team-nicolas-bio-p1': 'Nicolas possède plus de dix années d\'expérience dans différents secteurs d\'activité auprès de producteurs manufacturiers, distributeurs de biens de consommation, TI, le divertissement et le monde des start-ups.',
+    'team-nicolas-bio-p2': 'Il a pu développer une double compétence en management et ventes acquise au sein d\'entreprises internationales en France, au Canada et en Amérique Latine et comme entrepreneur dans des postes de Directeur des comptes majeurs, Directeur des opérations et CEO. Trilingue, avec une maîtrise en administration des affaires, une spécialité en gestion de projets par le PMI, diverses certifications en gestion de projets TI et design thinking, Nicolas a développé une approche consultative centré sur l\'expérience client.',
+    'team-nicolas-bio-p3': 'Leader passionné, structuré et diplomate dans les affaires qui concentre ses connaissances et sa compréhension des enjeux de l\'entreprise au service du recrutement des meilleurs talents professionnels et exécutifs. À titre de nouveau président, Nicolas est fier de reprendre le flambeau et aura à cœur de protéger les 50 ans d\'histoire du Groupe Magellan / St-Amour sur le marché québécois du recrutement, ainsi que d\'en assurer la croissance continue pour les prochaines années.',
+    /* Testimonials */
+    'testi-eyebrow': 'Témoignages',
+    'testi-h2': '50 ans. +600 entreprises. Une réputation construite mandat par mandat.',
+    'testi-sub': 'St-Amour Cadres Supérieurs, division chasse exécutive de St-Amour — le plus grand groupe de recrutement québécois indépendant.',
+    'testi-medtronic': 'Leur réputation n\'est plus à faire, professionnel, sympathique et résilient ils ont toujours livré leurs mandats et ce au cours de plusieurs années dans différents secteurs en pharma et médical. Ils sont toujours mon premier appel pour un mandat.',
+    'testi-desjardins': 'J\'y ai eu affaire en tant que candidat en recherche d\'emplois et ma conseillère à su me proposer plusieurs postes qui correspondaient à mes attentes, aspirations et compétences, en se basant sur ma personnalité et mes expériences de travail précédentes. Il s\'agit réellement de professionnels du recrutement, et pas seulement d\'une agence de placement qui se charge de trouver n\'importe qui à n\'importe quel prix.',
+    'testi-integra': 'Une équipe formidable, qui veille toujours à trouver la meilleure option, la plus adaptée à vos objectifs. Mme Sonia Riverin est un atout précieux qui saura vous guider et vous aider à améliorer vos compétences professionnelles. Je la recommande à 100 %.',
+    'testi-jamp': 'Nous avons le plaisir de collaborer avec la firme de recrutement St-Amour depuis de nombreuses années et pouvons affirmer sans réserve qu\'elle est un partenaire de confiance pour nos besoins en recrutement. Leur compréhension approfondie de notre secteur d\'activité ainsi que leur capacité à nous présenter des candidatures de qualité répondent adéquatement à nos besoins. Leurs communications et leurs suivis à chaque étape d\'un mandat de recrutement est régulier et fluide. Avec notre croissance rapide, St-Amour est un partenaire fiable pour nous aider à supporter notre croissance.',
+    'testi-alexander': 'Notre expérience avec l\'équipe de St-Amour a été extrêmement positive. Nous avons non seulement partagé nos meilleures pratiques et notre camaraderie, mais aussi de solides références commerciales. Nous sommes très heureux que St-Amour ait choisi de rejoindre le réseau CFR Global Executive Search Network.',
+    'testi-lumen': 'Équipe très professionnelle ! Excellent service et les résultats sont au rendez-vous !',
+    'testi-goldbeck': 'St-Amour est un excellent partenaire de recrutement pour mon entreprise, Goldbeck Recruiting, dans l\'est du Canada depuis près de 20 ans. Chaque fois que nos clients ont des besoins en matière de vente, d\'exploitation, de finance ou d\'autres postes au Québec ou en Ontario, nous nous associons à St. Amour pour trouver les meilleurs candidats de la manière la plus efficace possible. Tous les recruteurs des bureaux de St. Amour à Toronto et à Montréal sont très professionnels, dévoués et extrêmement travaillants. Ils nous ont aidés à pourvoir rapidement et efficacement les postes difficiles de nos clients. Ils sont absolument dignes de confiance, communiquent très bien et disposent de réseaux importants dans les deux provinces et dans la plupart des secteurs d\'activité. Il est rassurant de savoir que lorsque nos clients nationaux ont des besoins en matière de recrutement à Toronto, Montréal, Ottawa ou dans toute autre ville du centre du Canada, nous pouvons nous associer à St. Amour pour fournir un service professionnel et fiable.',
+    'testi-cta': 'Demander ma consultation gratuite',
+    /* FAQ */
+    'faq-eyebrow': 'FAQ',
+    'faq-h2': 'Vous avez des questions?',
+    'faq-q1': 'Quelle différence existe-t-il entre une agence de placement et une firme de recrutement ?<span class="icon">+</span>',
+    'faq-a1': 'Une firme de chasseurs de têtes a pour mission de trouver la personne taillée sur mesure pour votre poste à pourvoir. Quant à l\'agence de placement, elle se charge habituellement de la gestion et de la rémunération des employés qu\'elle place temporairement dans votre entreprise (fiche de paie externe).',
+    'faq-q2': 'Je n\'ai jamais fait affaire avec une firme de recrutement par le passé. Pourquoi devrais-je envisager de faire appel à vos services ?<span class="icon">+</span>',
+    'faq-a2': 'Parce que votre temps est toujours mieux investi à développer vos affaires et à gérer votre travail quotidien. Laissez-nous la tâche du recrutement, qui est notre raison d\'être et notre expertise depuis près de 50 ans.',
+    'faq-q3': 'Quelle est la différence entre St-Amour et les autres cabinets de chasse ?<span class="icon">+</span>',
+    'faq-a3-p1': 'St-Amour est une entreprise canadienne fiable et réputée offrant des services de recrutement sur mesure. Nos chasseurs de têtes sont expérimentés et ont une connaissance approfondie du terrain, puisqu\'ils ont directement travaillé au sein des secteurs pour lesquels nous proposons de vous aider. Ils sont ainsi pleinement à l\'écoute de vos besoins et conscients de vos enjeux internes.',
+    'faq-a3-p2': 'Chez St-Amour, nous développons une réelle collaboration avec vous. Nous recherchons les candidats avec lesquels nous nous entretenons de manière proactive. Nous les rencontrons face à face, généralement pendant plus d\'une heure. Parce que nous faisons bien plus qu\'une simple vérification téléphonique, nous savons quels candidats possèdent les forces, l\'expérience et l\'expertise que vous recherchez. Sans même avoir lancé de nouvelle recherche, nous pouvons identifier les candidats les plus talentueux grâce à notre extraordinaire bassin de candidats.',
+    'faq-q4': 'Dans quels secteurs êtes-vous spécialisés ?<span class="icon">+</span>',
+    'faq-a4-p1': 'Puisque nos recruteurs sont des hommes et des femmes de terrain, nous nous focalisons sur les secteurs desquels ils viennent.',
+    'faq-a4-p2': 'Nos spécialités :',
+    'faq-a4-ul': '<li>Biens de consommation</li><li>Pharmaceutique et médical</li><li>Communications et médias</li><li>Construction et génie</li><li>Industriel et manufacturier</li><li>Services aux entreprises</li>',
+    'faq-q5': 'Pour quels types de postes offrez-vous vos services ?<span class="icon">+</span>',
+    'faq-a5-p1': 'Nous offrons nos services pour les catégories d\'emploi suivantes :',
+    'faq-a5-ul': '<li>Ventes</li><li>Marketing</li><li>Production et ingénierie</li><li>Logistique et approvisionnement</li><li>Ressources humaines</li><li>Finances</li><li>Postes scientifiques et techniques</li><li>Cadres et exécutifs</li>',
+    'faq-q6': 'Combien de temps vous faut-il pour trouver notre future recrue ?<span class="icon">+</span>',
+    'faq-a6': 'Nous gérons habituellement des mandats ayant un haut niveau d\'urgence et nous savons aussi que le temps et les ressources sont nécessaires pour s\'assurer de trouver la meilleure personne pour le poste. Comptez entre 5 et 15 jours pour l\'acceptation du mandat, la recherche sur le marché et pour l\'établissement d\'une liste de candidats. La suite dépend de vous, de votre rapidité à planifier et à faire passer les entrevues, ainsi qu\'à prendre une décision. Afin d\'assurer un processus fiable et efficace, il est important que les gestionnaires décisionnaires (gestionnaires recruteurs) soient impliqués dès le début du processus. Un poste est généralement pourvu en l\'espace de 2 mois.',
+    'faq-q7': 'Devons-nous vous donner l\'exclusivité ?<span class="icon">+</span>',
+    'faq-a7': 'Vous êtes mieux servi lorsque vous travaillez avec une seule entreprise de recrutement. Traiter avec plusieurs fournisseurs entraîne la duplication des candidats et affaiblit votre marque employeur. Cette dernière est essentielle pour attirer les meilleurs talents et garder la plus grande intégrité. Nous nous comportons avec la plus grande fierté, le plus grand professionnalisme et prenons la responsabilité de représenter vos intérêts sur le marché. Nous ne diluerons pas votre marque employeur et nous prenons au sérieux l\'honneur d\'être partenaire dans le recrutement de votre entreprise. Chaque candidat avec qui nous parlons en votre nom sera traité avec le même professionnalisme que celui dont votre propre équipe ferait preuve.',
+    'faq-q8': 'Qu\'arrive-t-il si nous trouvons sans votre assistance ?<span class="icon">+</span>',
+    'faq-a8': 'Nous recommandons de faire parvenir le candidat à notre équipe pour qu\'il subisse le même processus de sélection que le talent que nous avons sélectionné. Une fois le candidat choisi, notre garantie de remplacement s\'appliquera, ce n\'est pas négligeable.',
+    'faq-q9': 'Quels sont vos tarifs ?<span class="icon">+</span>',
+    'faq-a9': 'Nous vous recommandons de communiquer avec l\'un de nos recruteurs, il/elle se fera un plaisir de discuter avec vous à ce sujet.',
+    'faq-q10': 'Doit-on payer une avance ?<span class="icon">+</span>',
+    'faq-a10': 'Nous traitons chaque demande de façon individuelle pour vous offrir un service le plus personnalisé et le plus adapté possible à votre besoin. En fonction du poste à pourvoir et du nombre d\'heures de travail estimé, nous pouvons vous demander une avance, mais ce n\'est pas systématique. N\'hésitez pas à prendre directement contact avec nous et nous nous ferons un plaisir de discuter de votre projet',
+    'faq-q11': 'Quels sont les moyens que vous utilisez pour dénicher la perle rare ?<span class="icon">+</span>',
+    'faq-a11-p1': 'Notre équipe de recruteurs experts fait appel à son large réseau dans lequel il a travaillé au cours de sa carrière et dans lequel ils sont habitués à recruter. Leurs forces résident dans leurs connaissances concrètes du terrain.',
+    'faq-a11-p2': 'Ils s\'appuient et utilisent des données provenant de différentes sources qualifiées qui asssurent un diagnostic, des analyses et des recommendations qui guideront vos décisions concernant l\'acquisition de talents.',
+    'faq-q12': 'Quelles sont vos méthodes d\'évaluation ? Quelles vérifications d\'usages pré-emploi effectuez-vous ?<span class="icon">+</span>',
+    'faq-a12': 'Une entrevue exhaustive est menée avec chaque candidat ; des questions comportementales peuvent être posées, des mises en situation proposées et certaines études de cas peuvent être utilisées pour évaluer les candidats. Nous offrons des vérifications pré-emploi de type plumitif, académique, et de crédit. Toutes nos méthodes sont reconnues et approuvées par nos clients. Il y a presque 50 ans que St-Amour crée les meilleures alliances, ce n\'est pas pour rien!',
+    'faq-q13': 'Offrez-vous des évaluations psychométriques ?<span class="icon">+</span>',
+    'faq-a13': 'Nous offrons différents tests psychométriques adaptés à différents types de postes. Les tests psychométriques permettent aux entreprises de mettre toutes les chances de leur côté afin d\'embaucher la bonne personne. Ils sont un réel soutien pour préparer les entrevues d\'embauche, pour faciliter le processus de promotions internes ou encore pour détecter vos leaders de demain.',
+    'faq-q14': 'Pouvez-vous évaluer les candidats que nous avons dans notre banque ?<span class="icon">+</span>',
+    'faq-a14': 'Bien sûr, c\'est une excellente idée, car cela permet une évaluation de tous les candidats sur les mêmes critères et sur une base uniforme.',
+    /* Consultation form */
+    'consult-h2': '30 minutes. Un recruteur.<br><span class="accent">Votre mandat.</span>',
+    'consult-p': 'Pas de démonstration commerciale. Pas de présentation corporative. Un appel pour qualifier la faisabilité de votre mandat — et passer à l\'action.',
+    'form-name': 'Nom',
+    'form-company': 'Nom de l\'entreprise',
+    'form-email': 'Courriel',
+    'form-phone': 'Téléphone',
+    'form-industry': 'Industrie',
+    'form-select-ph': '—Veuillez choisir une option—',
+    'industrie': { options: ["Cadre supérieur","Manufacturier","Finance & Comptabilité","Vente industrielle","Pharma & Médical","B2B","TI","RH & Admin","Biens de consommation","Construction","Autre"] },
+    'form-message': 'Message',
+    'form-submit': 'Demander ma consultation gratuite →',
+    'form-micro': 'Réponse sous 24h · Aucun engagement',
+    'side-bullet1': 'Parlez à un recruteur de votre secteur en moins de 24h.',
+    'side-bullet2': 'Confidentiel — aucun engagement requis.',
+    'side-bullet3': 'Des recruteurs issus de votre industrie, qui connaissent déjà les candidats que vous cherchez.',
+    /* Footer */
+    'footer-legal': '© St-Amour Cadres Supérieurs · <a href="#">Plan du site</a> · <a href="#">Conditions d\'utilisation</a> · <a href="#">Politique de confidentialité</a>'
+  },
+  en: {
+    /* Nav */
+    'nav-about': 'About',
+    'nav-services': 'Our Services',
+    'nav-team': 'Team',
+    'nav-testimonials': 'Testimonials',
+    'nav-cta': 'Free Consultation',
+    /* Hero badges */
+    'badge-years': '⭐ 50 years of expertise',
+    'badge-clients': '600+ client companies',
+    'badge-locations': 'Montréal · Ontario · Canada',
+    /* Hero */
+    'hero-h1': 'Your next VP or director, presented in <span class="accent">21 days.</span>',
+    'hero-qualifier': '50 years of executive search in Quebec. Our recruiters come from your industry — and already know the candidates you\'re looking for.',
+    'vsl-title': 'How St-Amour delivers your executive in 21 days',
+    'vsl-caption': 'Click to watch · No commitment',
+    'hero-cta': 'Speak to a recruiter from your industry →',
+    'hero-micro': 'Response within 24h · No commitment · Confidential',
+    'logo-label': 'Our satisfied clients',
+    /* Stats bar */
+    'stat1-num': '50 years',
+    'stat1-lbl': 'of expertise in executive search',
+    'stat2-num': '600+',
+    'stat2-lbl': 'companies served across Quebec and Canada',
+    'stat3-num': '21 days',
+    'stat3-lbl': 'to your first qualified candidates',
+    /* About */
+    'about-eyebrow': 'About',
+    'about-h2': 'A partner in executive recruitment — not just another search firm.',
+    'about-p1': 'For 50 years, St-Amour Cadres Supérieurs has supported Quebec and Canadian SMEs through critical executive and leadership recruitment mandates — across Quebec, Ontario, and Canada. We offer a tailored advisory service for every mandate: your market, your strategic objectives, your values and culture, because a senior executive is never hired from a résumé alone.',
+    'about-p2': 'Our strategists have themselves held leadership roles in the sectors they recruit for. They leverage privileged access to industry executives and a vast network of candidates with whom they have collaborated throughout their careers.',
+    'about-link': 'Entrust us with your next executive mandate →',
+    /* Sectors */
+    'sectors-eyebrow': 'Our Services',
+    'sectors-h2': 'Multi-sector expertise in executive recruitment',
+    'sectors-sub': 'Our targeted and tailored executive recruitment services cover a range of industries including business services and professional services:',
+    'sector-1': '<span class="arrow">→</span>Fintech, Finance & Banking',
+    'sector-2': '<span class="arrow">→</span>Consumer Products (CPG)',
+    'sector-3': '<span class="arrow">→</span>Life Sciences & MedTech',
+    'sector-4': '<span class="arrow">→</span>Engineering, Production',
+    'sector-5': '<span class="arrow">→</span>Construction & Real Estate',
+    'sector-6': '<span class="arrow">→</span>Manufacturing',
+    'sector-7': '<span class="arrow">→</span>Consulting & Technology',
+    'sector-8': '<span class="arrow">→</span>Sustainability & Environment',
+    'sector-9': '<span class="arrow">→</span>Private Equity & Venture Capital',
+    /* Team */
+    'team-eyebrow': 'Team',
+    'team-h2': 'Meet the leaders who will propel your business forward.',
+    'team-sub': 'Our team is passionate and places people at the heart of everything we do. Every recruitment project is led by senior specialists with deep expertise in recruiting within their own specific sector.',
+    'bio-read-more': 'Read bio <span class="bio-arrow">▾</span>',
+    /* Team tags */
+    'tag-consumer-goods': 'Consumer Goods',
+    'tag-industrial': 'Industrial',
+    'tag-life-sciences': 'Life Sciences',
+    'tag-manufacturing': 'Manufacturing',
+    'tag-leadership': 'Leadership',
+    /* Julie */
+    'team-julie-role': 'Division Chief / VP Executive Search',
+    'team-julie-bio-short': 'Julie brings over twenty-five years of experience in customer service, retail sales, corporate and pharmaceutical sales …',
+    'team-julie-bio-p1': 'Julie brings over twenty-five years of experience in customer service, retail sales, corporate and pharmaceutical sales as well as sales training. She worked in telecommunications and in pharmaceuticals as a representative for specialist physicians. The last ten years of her career were devoted to building and managing her own business.',
+    'team-julie-bio-p2': 'Julie has strong business acumen. She is curious and deeply interested in people, which allows her to maintain and grow her extensive professional network. She is committed to client satisfaction and always aims to exceed expectations.',
+    /* Richard */
+    'team-richard-role': 'VP Executive Search',
+    'team-richard-bio-short': 'With over thirty-five years of experience across diverse industries including consumer goods …',
+    'team-richard-bio-p1': 'With over thirty-five years of experience across diverse industries including consumer goods, electronic media, and printing — primarily in large organizations as Vice-President, General Manager, and President — Richard has demonstrated strong leadership by building solid teams while developing the next generation of talent.',
+    'team-richard-bio-p2': 'His knowledge, skills, and understanding of business challenges help organizations recruit top talent to achieve their business development objectives.',
+    /* Brian */
+    'team-brian-role': 'Senior Executive Recruitment Director',
+    'team-brian-bio-short': 'For over eight years, Brian has been connecting with and getting to know top talent …',
+    'team-brian-bio-p1': 'For over eight years, Brian has been connecting with and getting to know top talent, while working closely with HR and key internal stakeholders to convey the essence of his clients\' culture to prospective candidates.',
+    'team-brian-bio-p2': 'Brian has extensive experience working with well-known brands and possesses sharp skills in conducting confidential and challenging searches. He is known for his discernment and deep understanding of the challenges companies face when attracting, retaining, and planning the succession of key talent in a highly competitive market.',
+    'team-brian-bio-p3': 'He is also passionate about understanding the unique needs of his clients, which allows him to confidently recommend the right talent for the right organization. He takes pride in the trust placed in him by respected companies across all the sectors with which he has built strong alliances.',
+    /* Sonia */
+    'team-sonia-role': 'VP, Executive Search',
+    'team-sonia-bio-short': 'Sonia is a leader in recruiting senior and strategic roles in the life sciences sector …',
+    'team-sonia-bio-p1': 'Sonia is a leader in recruiting senior and strategic roles in the life sciences sector. For over 20 years, she has helped numerous companies fill executive and leadership positions. She is regularly consulted by pharmaceutical, medical, and scientific organizations on recruitment challenges and talent retention in Canada. She maintains a constant presence at industry conferences. Her reputation, experience, and extensive network make her an exceptionally qualified professional.',
+    'team-sonia-bio-p2': 'Sonia holds the position of VP Pharmaceutical and Medical Recruitment for the St-Amour / Groupe Magellan division and has been a member of the Women Leader in Pharma leadership team for 3 years.',
+    /* Claude B */
+    'team-claude-role': 'VP, Executive Search',
+    'team-claude-bio-short': 'Since joining the group, Claude has acted as an expert in the manufacturing sector and a leader in …',
+    'team-claude-bio-p1': 'Since joining the group, Claude has acted as an expert in the manufacturing sector and a leader in recruiting senior and strategic positions in this field. For over 15 years, he has helped numerous companies fill executive and leadership roles.',
+    'team-claude-bio-p2': 'His hands-on experience in manufacturing operations management, combined with his years in recruitment, enables him to support companies in their strategic thinking around talent acquisition. Continuously in contact with senior candidates, his market network keeps growing.',
+    'team-claude-bio-p3': 'Claude has been Managing Partner / Professional Division at Groupe Magellan/St-Amour since 2015.',
+    /* Nicolas */
+    'team-nicolas-role': 'President & CEO',
+    'team-nicolas-bio-short': 'Nicolas has over ten years of experience across various sectors with manufacturers, consumer goods distributors …',
+    'team-nicolas-bio-p1': 'Nicolas has over ten years of experience across various sectors with manufacturers, consumer goods distributors, IT, entertainment, and the start-up world.',
+    'team-nicolas-bio-p2': 'He developed dual expertise in management and sales through international companies in France, Canada, and Latin America, and as an entrepreneur in roles including Major Accounts Director, Operations Director, and CEO. Trilingual, with an MBA, a PMI project management specialty, various IT project management and design thinking certifications, Nicolas developed a consultative approach centered on the client experience.',
+    'team-nicolas-bio-p3': 'A passionate, structured, and diplomatic business leader who channels his knowledge and understanding of business challenges into recruiting the best professional and executive talent. As incoming President, Nicolas is proud to carry the torch and is committed to preserving the 50-year legacy of Groupe Magellan / St-Amour in the Quebec recruitment market, and to ensuring its continued growth for years to come.',
+    /* Testimonials */
+    'testi-eyebrow': 'Testimonials',
+    'testi-h2': '50 years. 600+ companies. A reputation built mandate by mandate.',
+    'testi-sub': 'St-Amour Cadres Supérieurs, executive search division of St-Amour — Quebec\'s largest independent recruitment group.',
+    'testi-medtronic': 'Their reputation is well established. Professional, friendly, and resilient, they have always delivered on their mandates over many years across different sectors in pharma and medical. They are always my first call for a mandate.',
+    'testi-desjardins': 'I dealt with them as a job seeker, and my advisor was able to offer me several positions that matched my expectations, aspirations, and skills, based on my personality and previous work experience. These are true recruitment professionals, not just a placement agency looking to fill positions at any cost.',
+    'testi-integra': 'Great staff, always make sure to find the best option, most suitable for your goals. Mrs. Sonia Riverin is a great asset who will guide you and help you improve your professional skills. 100% recommended.',
+    'testi-jamp': 'We have had the pleasure of working with the St-Amour recruitment firm for many years and can say without reservation that they are a trusted partner for our recruitment needs. Their deep understanding of our sector and their ability to present quality candidates adequately meets our needs. Their communication and follow-up at every stage of a recruitment mandate is regular and smooth. With our rapid growth, St-Amour is a reliable partner to help support our expansion.',
+    'testi-alexander': 'Our experience with the team at St-Amour has been extraordinarily positive. Not only have we shared best practices and camaraderie, but also solid business referrals. We are very pleased that St-Amour chose to join the CFR Global Executive Search Network.',
+    'testi-lumen': 'Very professional team! Excellent service and great results!',
+    'testi-goldbeck': 'St-Amour has been an excellent recruiting partner for my company, Goldbeck Recruiting, in Eastern Canada for almost 20 years. Whenever our clients have sales, operations, finance, or other position needs in Quebec or Ontario, we partner with St-Amour to find the best candidates as efficiently as possible. All the recruiters at St-Amour\'s Toronto and Montreal offices are highly professional, dedicated, and extremely hard-working. They have helped us fill our clients\' difficult positions quickly and effectively. They are absolutely trustworthy, communicate very well, and have extensive networks in both provinces and most industries. It is reassuring to know that when our national clients have recruitment needs in Toronto, Montreal, Ottawa, or any other city in central Canada, we can partner with St-Amour to provide professional and reliable service.',
+    'testi-cta': 'Request my free consultation',
+    /* FAQ */
+    'faq-eyebrow': 'FAQ',
+    'faq-h2': 'Have questions?',
+    'faq-q1': 'What is the difference between a placement agency and a recruitment firm?<span class="icon">+</span>',
+    'faq-a1': 'A headhunting firm\'s mission is to find the person perfectly suited to your open position. A placement agency, on the other hand, typically handles the management and compensation of employees it places temporarily within your company (external payroll).',
+    'faq-q2': 'I\'ve never worked with a recruitment firm before. Why should I consider using your services?<span class="icon">+</span>',
+    'faq-a2': 'Because your time is always better spent developing your business and managing your day-to-day work. Leave recruitment to us — it\'s our purpose and our expertise for nearly 50 years.',
+    'faq-q3': 'What sets St-Amour apart from other search firms?<span class="icon">+</span>',
+    'faq-a3-p1': 'St-Amour is a trusted and reputable Canadian company offering tailored recruitment services. Our headhunters are experienced and have deep field knowledge, having worked directly within the sectors they recruit for. They are fully attuned to your needs and aware of your internal challenges.',
+    'faq-a3-p2': 'At St-Amour, we develop a genuine partnership with you. We proactively seek and engage with candidates, meeting them face to face — typically for over an hour. Because we go far beyond a simple phone screen, we know which candidates have the strengths, experience, and expertise you need. Without even launching a new search, we can identify the most talented candidates from our extraordinary talent pool.',
+    'faq-q4': 'Which sectors do you specialize in?<span class="icon">+</span>',
+    'faq-a4-p1': 'Since our recruiters are field practitioners, we focus on the sectors they come from.',
+    'faq-a4-p2': 'Our specialties:',
+    'faq-a4-ul': '<li>Consumer Goods</li><li>Pharmaceutical & Medical</li><li>Communications & Media</li><li>Construction & Engineering</li><li>Industrial & Manufacturing</li><li>Business Services</li>',
+    'faq-q5': 'What types of positions do you recruit for?<span class="icon">+</span>',
+    'faq-a5-p1': 'We offer our services for the following job categories:',
+    'faq-a5-ul': '<li>Sales</li><li>Marketing</li><li>Production & Engineering</li><li>Logistics & Procurement</li><li>Human Resources</li><li>Finance</li><li>Scientific & Technical Roles</li><li>Executives & Senior Management</li>',
+    'faq-q6': 'How long does it take to find our next hire?<span class="icon">+</span>',
+    'faq-a6': 'We typically manage mandates with a high level of urgency, and we also know that time and resources are needed to find the best person for the role. Allow 5 to 15 days for mandate acceptance, market research, and establishing a candidate shortlist. What follows depends on you — how quickly you schedule and conduct interviews, and how quickly you make a decision. To ensure a reliable and efficient process, it is important that decision-making managers are involved from the start. A position is typically filled within 2 months.',
+    'faq-q7': 'Do we need to give you exclusivity?<span class="icon">+</span>',
+    'faq-a7': 'You are better served when you work with a single recruitment firm. Working with multiple providers leads to duplicate candidates and weakens your employer brand — which is essential for attracting top talent and maintaining integrity. We act with the utmost pride and professionalism, and take responsibility for representing your interests in the market. We will not dilute your employer brand, and we take seriously the honour of being your recruitment partner. Every candidate we speak to on your behalf will be treated with the same professionalism your own team would show.',
+    'faq-q8': 'What happens if we find a candidate on our own?<span class="icon">+</span>',
+    'faq-a8': 'We recommend submitting that candidate to our team so they go through the same selection process as the talent we have identified. Once a candidate is chosen, our replacement guarantee applies — and that\'s not a small thing.',
+    'faq-q9': 'What are your fees?<span class="icon">+</span>',
+    'faq-a9': 'We recommend speaking directly with one of our recruiters — they will be happy to discuss this with you.',
+    'faq-q10': 'Is an advance required?<span class="icon">+</span>',
+    'faq-a10': 'We handle each request individually to provide the most personalized and appropriate service for your needs. Depending on the position to be filled and the estimated hours of work, we may request an advance — but this is not always the case. Feel free to contact us directly and we will be happy to discuss your project.',
+    'faq-q11': 'What methods do you use to find the right candidate?<span class="icon">+</span>',
+    'faq-a11-p1': 'Our team of expert recruiters draws on the extensive network they have built throughout their careers — the same networks in which they are experienced at recruiting. Their strengths lie in their concrete, hands-on industry knowledge.',
+    'faq-a11-p2': 'They leverage data from a range of qualified sources to provide diagnostics, analysis, and recommendations that will guide your talent acquisition decisions.',
+    'faq-q12': 'What are your assessment methods? What pre-employment checks do you conduct?<span class="icon">+</span>',
+    'faq-a12': 'A thorough interview is conducted with every candidate; behavioural questions may be asked, situational exercises proposed, and case studies used to assess candidates. We offer pre-employment checks including criminal record, academic, and credit verifications. All our methods are recognized and approved by our clients. St-Amour has been forging the best alliances for nearly 50 years — and there\'s a reason for that.',
+    'faq-q13': 'Do you offer psychometric assessments?<span class="icon">+</span>',
+    'faq-a13': 'We offer a range of psychometric tests adapted to different types of positions. Psychometric assessments help companies maximize their chances of hiring the right person. They are a genuine support tool for preparing hiring interviews, facilitating internal promotion processes, and identifying your future leaders.',
+    'faq-q14': 'Can you assess candidates from our own talent bank?<span class="icon">+</span>',
+    'faq-a14': 'Absolutely — it\'s an excellent idea, as it allows all candidates to be evaluated using the same criteria on a consistent basis.',
+    /* Consultation form */
+    'consult-h2': '30 minutes. One recruiter.<br><span class="accent">Your mandate.</span>',
+    'consult-p': 'No sales pitch. No corporate presentation. A single call to assess feasibility and move into action.',
+    'form-name': 'Name',
+    'form-company': 'Company Name',
+    'form-email': 'Email',
+    'form-phone': 'Phone',
+    'form-industry': 'Industry',
+    'form-select-ph': '—Please select an option—',
+    'industrie': { options: ["Senior Executive","Manufacturing","Finance & Accounting","Industrial Sales","Pharmaceuticals & Medical","B2B","IT","HR & Administration","Consumer Goods","Construction","Other"] },
+    'form-message': 'Message',
+    'form-submit': 'Request my free consultation →',
+    'form-micro': 'Response within 24h · No commitment',
+    'side-bullet1': 'Speak to a recruiter from your industry within 24h.',
+    'side-bullet2': 'Confidential — no commitment required.',
+    'side-bullet3': 'Recruiters from your industry who already know the candidates you\'re looking for.',
+    /* Footer */
+    'footer-legal': '© St-Amour Cadres Supérieurs · <a href="#">Site Map</a> · <a href="#">Terms of Use</a> · <a href="#">Privacy Policy</a>'
+  }
+};
+
+function setLang(lang) {
+  localStorage.setItem('lang', lang);
+  document.documentElement.lang = lang;
+  ['lang-fr','lang-en','m-lang-fr','m-lang-en','footer-lang-fr','footer-lang-en'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var isActive = id.endsWith(lang);
+    el.classList.toggle('inactive', !isActive);
+  });
+  /* Update language-specific hidden form fields */
+  var hSubject = document.getElementById('h-subject');
+  var hLang = document.getElementById('h-language');
+  if (hSubject) hSubject.value = lang === 'en' ? 'Nouveau lead — St-Amour Executive (EN)' : 'Nouveau lead — St-Amour Executive (FR)';
+  if (hLang) hLang.value = lang;
+  /* Hide VSL in hero on English — only show on French */
+  var vslWrap = document.querySelector('.hero .vsl-wrap');
+  if (vslWrap) vslWrap.style.display = lang === 'en' ? 'none' : '';
+  /* About section: native video on FR, static image on EN */
+  var aboutVid = document.getElementById('about-video');
+  var aboutImg = document.getElementById('about-img-en');
+  if (aboutVid) aboutVid.style.display = lang === 'en' ? 'none' : 'block';
+  if (aboutImg) aboutImg.style.display = lang === 'en' ? 'block' : 'none';
+  /* Swap logos for FR/EN */
+  document.querySelectorAll('[data-src-fr]').forEach(function(el) {
+    el.src = lang === 'en' ? el.getAttribute('data-src-en') : el.getAttribute('data-src-fr');
+  });
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (i18n[lang] && i18n[lang][key] !== undefined) el.textContent = i18n[lang][key];
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-html');
+    if (i18n[lang] && i18n[lang][key] !== undefined) el.innerHTML = i18n[lang][key];
+  });
+  /* Apply dropdown options */
+  document.querySelectorAll('[data-i18n-opts]').forEach(function(sel) {
+    var key = sel.getAttribute('data-i18n-opts');
+    if (!i18n[lang] || !i18n[lang][key]) return;
+    var data = i18n[lang][key];
+    var currentVal = sel.value;
+    sel.innerHTML = '';
+    var ph = document.createElement('option');
+    ph.value = '';
+    ph.textContent = i18n[lang]['form-select-ph'] || '—';
+    sel.appendChild(ph);
+    data.options.forEach(function(opt) {
+      var o = document.createElement('option');
+      o.textContent = opt;
+      sel.appendChild(o);
+    });
+    sel.value = currentVal;
+  });
+}
+(function() {
+  var urlLang = new URLSearchParams(window.location.search).get('lang');
+  var initLang = urlLang === 'en' ? 'en' : (localStorage.getItem('lang') || 'fr');
+  if (initLang !== 'fr') setLang(initLang);
+})();
+</script>
+</body>
+</html>
